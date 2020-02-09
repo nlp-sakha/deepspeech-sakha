@@ -1,0 +1,602 @@
+./DeepSpeech.py \
+  --train_batch_size 48 \
+  --dev_batch_size 40 \
+  --test_batch_size 40 \
+  --n_hidden 1024 \
+  --epochs 64 \
+  --early_stop True \
+  --es_mean_th 0.1 \
+  --es_std_th 0.1 \
+  --dropout_rate 0.30 \
+  --learning_rate 0.0005 \
+  --report_count 100 \
+  --train_files ../sah_6h_2019-06-12/clips/train.csv --test_files ../sah_6h_2019-06-12/clips/test.csv --checkpoint_dir ../checkpoints --alphabet_config_path ../alphabet_sah.txt
+  
+  
+  
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:00:26 | Steps: 25 | Loss: 237.368706                                                                                                                      
+Epoch 1 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 199.769304                                                                                                                      
+Epoch 2 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 199.063825                                                                                                                      
+Epoch 3 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 197.249267                                                                                                                      
+Epoch 4 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 191.298204                                                                                                                      
+Epoch 5 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 183.608246                                                                                                                      
+WARNING:tensorflow:From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W1107 20:53:00.271697 140313053988672 deprecation.py:323] From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Epoch 6 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 171.219496                                                                                                                      
+Epoch 7 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 156.340696                                                                                                                      
+Epoch 8 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 142.751963                                                                                                                      
+Epoch 9 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 130.282944                                                                                                                      
+Epoch 10 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 120.421935                                                                                                                     
+Epoch 11 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 108.630404                                                                                                                     
+Epoch 12 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 99.347673                                                                                                                      
+Epoch 13 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 91.162301                                                                                                                      
+Epoch 14 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 84.653338                                                                                                                      
+Epoch 15 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 78.569943                                                                                                                      
+Epoch 16 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 72.538461                                                                                                                      
+Epoch 17 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 68.289349                                                                                                                      
+Epoch 18 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 64.721319                                                                                                                      
+Epoch 19 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 60.972423                                                                                                                      
+Epoch 20 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 57.534915                                                                                                                      
+Epoch 21 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 53.837697                                                                                                                      
+Epoch 22 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 51.740321                                                                                                                      
+Epoch 23 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 49.043272                                                                                                                      
+Epoch 24 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 46.054512                                                                                                                      
+Epoch 25 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 44.424724                                                                                                                      
+Epoch 26 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 41.062843                                                                                                                      
+Epoch 27 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 39.104990                                                                                                                      
+Epoch 28 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 37.159216                                                                                                                      
+Epoch 29 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 36.817140                                                                                                                      
+Epoch 30 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 36.790505                                                                                                                      
+Epoch 31 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 33.436836                                                                                                                      
+Epoch 32 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 31.257995                                                                                                                      
+Epoch 33 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 29.855710                                                                                                                      
+Epoch 34 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 27.963964                                                                                                                      
+Epoch 35 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 25.288296                                                                                                                      
+Epoch 36 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 23.620603                                                                                                                      
+Epoch 37 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 22.248126                                                                                                                      
+Epoch 38 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 21.710252                                                                                                                      
+Epoch 39 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 20.866737                                                                                                                      
+Epoch 40 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 19.143301                                                                                                                      
+Epoch 41 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 18.594311                                                                                                                      
+Epoch 42 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 18.461949                                                                                                                      
+Epoch 43 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 18.329863                                                                                                                      
+Epoch 44 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 16.285964                                                                                                                      
+Epoch 45 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 14.100990                                                                                                                      
+Epoch 46 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 12.684400                                                                                                                      
+Epoch 47 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 11.942853                                                                                                                      
+Epoch 48 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 11.830724                                                                                                                      
+Epoch 49 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 11.097356                                                                                                                      
+Epoch 50 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 10.536891                                                                                                                      
+Epoch 51 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 9.543539                                                                                                                       
+Epoch 52 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 8.690257                                                                                                                       
+Epoch 53 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 8.090136                                                                                                                       
+Epoch 54 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 7.261791                                                                                                                       
+Epoch 55 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 6.690387                                                                                                                       
+Epoch 56 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 6.410033                                                                                                                       
+Epoch 57 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 5.787640                                                                                                                       
+Epoch 58 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 5.518773                                                                                                                       
+Epoch 59 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 5.025842                                                                                                                       
+Epoch 60 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 5.024003                                                                                                                       
+Epoch 61 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 5.080182                                                                                                                       
+Epoch 62 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 4.752147                                                                                                                       
+Epoch 63 |   Training | Elapsed Time: 0:00:24 | Steps: 25 | Loss: 4.961762                                                                                                                       
+I FINISHED optimization in 0:26:26.586773
+WARNING:tensorflow:Entity <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f9c02b55eb8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f9c02b55eb8>>: AttributeError: module 'gast' has no attribute 'Num'
+W1107 21:16:56.301196 140313053988672 ag_logging.py:145] Entity <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f9c02b55eb8>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f9c02b55eb8>>: AttributeError: module 'gast' has no attribute 'Num'
+WARNING:tensorflow:From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+W1107 21:16:56.364901 140313053988672 deprecation.py:323] From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from ../checkpoints/train-1600
+I1107 21:16:56.365833 140313053988672 saver.py:1280] Restoring parameters from ../checkpoints/train-1600
+I Restored variables from most recent checkpoint at ../checkpoints/train-1600, step 1600
+Testing model on ../sah_6h_2019-06-12/clips/test.csv
+Test epoch | Steps: 11 | Elapsed Time: 0:00:55                                                                                                                                                   
+Test on ../sah_6h_2019-06-12/clips/test.csv - WER: 1.000000, CER: 0.878612, loss: 296.249817
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.869565, loss: 85.515755
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/3f8dafdbbecd067a17395745f5df3086c4fe9d82fe875ce9c6c9ae458ccb806a83b7c1f5c3e68047cfda36f27aece83506b875129cb609c009be20ec6718fbbb.wav
+ - src: "онон буоллаҕына саамай дьоллоох сир бу буолбут"
+ - res: "боосануо"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.836364, loss: 91.366562
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/0d96e993825dcdc13144dfe1e24f1d1521c0aa3c52353f26801a591022b5472678934b0035ff4c3ade0874d395052ab43bff21180b90dee4a97ff87174a5cdaf.wav
+ - src: "ол гынан баран били кэлии оҕонньору көрүүтэ көр дииллэр"
+ - res: "оанааниудт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.844444, loss: 100.397064
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/1b0a114ddc83e7ecf9529c4d1f33cb9275aa185bbb09f8266a08eb5b339cabdc70fdfc94c68a5e33111ad65f53215aa7557c8124a9dced0843d446b197c318c2.wav
+ - src: "үс киһи сибилигин аҕай ытан өлөрбүт ынахтарын"
+ - res: "киллнаситка"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.848485, loss: 101.940475
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/9a21d1055f6f0ce1f07b0cc68805aa244b1d2ba60874d64a4f084d777ce9e3651cbd2fc4b3bccaa2d182d8098d680def31a2d06f33588e07aad0e967812a2ccc.wav
+ - src: "онно тыыннаах тиийэр эрэ суох эрэ"
+ - res: "таисуаи"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.770833, loss: 102.800125
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/3aa03f4863e7ee3a6418c0bcce484e89c7d5e07e0f40ed4a2cc3aaa38dacde0ffee20b00d30f0f87f0a5d2bb6fdc8a8b482ac32e863cf9930a74452d778213c7.wav
+ - src: "кинилэр туох да сыһыана суох онно саһан сыталлар"
+ - res: "интуафсауост"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.864407, loss: 105.627716
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/34655b147b44978fd29f9c6691643adc271de798ef56645be6ef2cc439c43500a9624b50ce49507a0c6150e48b282b5a60309cec9b54eb7499a65723a5a32411.wav
+ - src: "уонна сиэбигэр уга сылдьан сөп буолабуола ааҕыталыы сырытта"
+ - res: "асиасауздт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.806452, loss: 105.902840
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/71908297e53e89e2179a5a1f5e46e336429ed1ca7c661de7509963cac9bc0ef44763289e2236003d2f8f0da63542055af2e38b4a830a520bcb5e19ddd3ed4f10.wav
+ - src: "ити дуо көрө түһээт таптал диэн"
+ - res: "хитиуосиал"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.851064, loss: 116.553421
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e9abf69099bf14fccf01ce8d7dd997eb5117f00b2e5d1873407f5c68918ebb7d35b313433ce6765887694b510423722730e77d9941d4045adaeebf43e3ebc1e9.wav
+ - src: "аны биир эмиэ туохха да тэҥнэммэт улуукан үөрүү"
+ - res: "мимантака"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.850000, loss: 118.048988
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2c2d2487ff98751b5e510ef1cd38c93cd856e7046ccf1e0bb06fe888c9ac343839b2120b6db3a4fa62d49d53231d8e75e1deea5b6e1fae3466521334f417a5c1.wav
+ - src: "павеллаах дьиэлэрэ саҥатык буолан ыраахтан дьэндэйэн көһүннэ"
+ - res: "ладстгалтосдн"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.816327, loss: 118.528099
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b7550facb814370621d22cc0d3c0353a427b9f1547b5a393ff05553e3747b94b19b61c9afeb39157b5dc4072672b3e39a6c73b64bfd481c1796e2eff35f9ee0f.wav
+ - src: "бу түбэҕэ кини бултаабыта уонтан тахса сыл буолла"
+ - res: "тимиусантпас"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.867925, loss: 119.229111
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5b006416e09bf26673f3660dfe4102e825f75e94a5d88b3a64556110c083d3c4512355f9bd1d8c921970b5db13507e0a453b19e576640b5c9c3f48d54e4d8e18.wav
+ - src: "омурҕантан эрэ ордук утуйан баран уһуктан олоро түстэ"
+ - res: "аатааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.844444, loss: 120.450279
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/41cfe44ae61019f7a7b8f44696e2b99e4ce60d3d5c8c9fc70b342234355e71087ebe0c2883ce140466f3611244e81b8896e97a496e7fb94494c9a41324581271.wav
+ - src: "оо онтон ону баран хаһан ылыахха буоллаҕа дии"
+ - res: "отудомалави"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.808511, loss: 120.657608
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f86b4a123beca3614db2e723d0110a6573d1a0a456ae336291b4c79c11f7955abc8801ad263e59cb741f8eb2cd4029b9d112df227ee1ef0edaadc26569d7abe7.wav
+ - src: "дьэ бу дойду үрэҕин булларан баран уоскуйбуттар"
+ - res: "усантбалканиант"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.843750, loss: 124.380569
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/32bb39519917fbf8e35b4091cf0d61c6e6c6a46f2bbe64b8f780cb56676374f0a53b1e2d191a893a8b4888721c0195ae58547acb028256f891e92188bf820976.wav
+ - src: "ыйы быһа уу эрэ аһылыктаах сытар"
+ - res: "кааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.833333, loss: 124.661934
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e7ca82774fe096540eb8728d91149df15e7a44d6bfe219e27391cf2d890672e6f53032af540d183135d64f94f323322280925c29fc5e2d385c508c692c9b122d.wav
+ - src: "тото аһаан баран үрэхтэн чугас баар күөлгэ илим үтэн таҕыста"
+ - res: "туаааааааааннннн"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.880952, loss: 127.265564
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f8ae50bd6d77fab29b9dec201e720b7f7f870d96fd111f8db354e05f8b6ae193aa7fe550e2a30d8870cc77062966ae0e12001ecdf74fea3c8bdc954f928b0ea3.wav
+ - src: "бүгүн күн ортотугар диэри испиэскэ кэлбэтэ"
+ - res: "натуитти"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.804878, loss: 127.452499
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/d13961b81de394c954c8bf0897617f2629d3e36bc6e47a603eac843d17a8fb228e46bf60015b3f58f4ee128f5b42952e843cf1edbafabf7b54ce544426f18419.wav
+ - src: "чугаһаан көрбүппүт молто утуйа сытар эбит"
+ - res: "ганахастзит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.857143, loss: 132.057983
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5c82d9bda486ca0023850dd72956250145321cbd58816db9dc0bbb364e20ad29b5d2f4414738fde29587f8f72a260349748f2b1601397c674dd3e1ea8f7fba9c.wav
+ - src: "хайдах буолара буолуой эдьиий этэн көр эрэ"
+ - res: "лдауауаеил"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.851064, loss: 132.482101
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/39577aabbf9e00c4ea321cdc139f98983901876e060b293ddaef4d32bc27da522e2ef682668a172c9205f55b50a4fd3f8f43185c479516a866d1d75be574c2a7.wav
+ - src: "доҕордуулар булсан түүнү быһа кэпсэтэн хоннулар"
+ - res: "бдуауакин"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.843750, loss: 134.739441
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/985ae9068ff628fdf6d59b6a55e85a538449b61cbf282d9208fd187b3f73dd84069782125d8f8aace17213f3cdb4eac32b40aec318ffa0aad07560caa17446e7.wav
+ - src: "туох даа онно бараары гынныҥ дуо"
+ - res: "раафагана"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.859649, loss: 136.561081
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/7b385f40f4f99197f00a2d87015969a32d13c77b4c493a75d77c3ee35567df3dfe6b8d39dd883fd295d968fac72570fcb65b79bcc4c76e589ff042749d544bf4.wav
+ - src: "били дьон уол эппитин курдук ааны баайаллар уоту оттоллор"
+ - res: "елисуауионлдут"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.883721, loss: 136.959793
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b38702ba76f1aafcefad79235a3d5ee51e10be190d25a27a8e4b6658e91fbcac411644abd560285b662d8f1bb8e1b151a5d11bab035d4eb20e136c3a6a00cae3.wav
+ - src: "ула рыйбаттэлэрийбэт диэн суох буоллаҕа дии"
+ - res: "бакаиси"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.868421, loss: 136.981415
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/03103f7fbadde6fa9caac9b8df000d496853bc10e67a18a0f00fc21ccc73ac553fcf64405d3b6d9fe44a1c8e639a0f4478989c23f9b343cd71e8fb53d86a9478.wav
+ - src: "дьиэ иһэ чуумпу туох да баара биллибэт"
+ - res: "иссдали"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.862069, loss: 137.303558
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/84edca40528591f46b0a2ad2003d45888ae2d261c9489927e46e2c1c2affefbb3dfc420977e295bb3a3d008f3d0f2fa6ac2643a61d758ddbad1d4aa939a87d10.wav
+ - src: "абаҕата суох сатаммат курдук буолааччыгын хайдах буоллугут"
+ - res: "амасануинад"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.808511, loss: 139.570679
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/04e48fe2712eea9c79ce9ba20c5cb46a92a781aacbb20f114e181df5e6437933830d418dacefddfcee3e075a8174ecd3c72b788d785d9ff1e7ee145e54a6e39a.wav
+ - src: "ылан иккистээн илиитигэр туттаран баран таҕыста"
+ - res: "таиттиттан"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.760000, loss: 140.801682
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/638372d7d14794c9ee68912ed6d7a4eb17d5f992c8c3a525d11230ef7c440d499ece323aaeb04615a08b0e7efe4d3874c570dcef8c72987187c08d25337253ad.wav
+ - src: "хаары ыраастаан баран ааны тутааҕыттан тутан турда"
+ - res: "аатааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.863636, loss: 141.046066
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/6973b8ab36a18c84830706bdec2c585af1943f96dd656aa30d94fa565ddf03269c1207c25d86d1df0e34e74ece59d2a80f5e11eeaec35ed398a86cd152d1f914.wav
+ - src: "ыал олорор курдук оҕуруоттаахтар дии баҕар манна олороллоро буолуо"
+ - res: "уооулдуооул"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.859375, loss: 141.143784
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/c7d848e5e3e652e89e1e96831e9106aeea6fa8456365857ae9122bdcc49bcb99b8e1dcc9823e3915204a6145550eabcd59f25356b42b0948049670f2aa3149a3.wav
+ - src: "үөскээбит дьон кыыстарын хайа кыалларынан өйүү убуу сатаабыттара"
+ - res: "сабингсанасу"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.890411, loss: 145.260788
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/d7d879faf50a881d703d79278e530b00a03a873cf1e73669f784a532fe4a67ce551ff58378764fb0e4873bd5cb42f6dc96be3e2d56a144e4bcea1cebaca0a081.wav
+ - src: "тулабытыгар хараҥаран халлааҥҥа бачымах курдук сулустар хойдон барбыттара"
+ - res: "тататкасита"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.818182, loss: 145.935089
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/cafc1c985d8ac807a23f56f858968cdd204607ffd6aae846ef72c855b7f491fb2e10c58c65bd6b730e441a3b06e3a9fd5c8179d194ed82bb4d94a27f3f0c4a1b.wav
+ - src: "үс сыл үлэлээн баран дойдуларыгар барбыттара"
+ - res: "сааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.851064, loss: 146.238815
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/08005dff5258cb081c77c6967673c78b4caec6b73fc11c2585fd1f02b06179c6e90453be165cf5842cdb36da01f10d661f1ddf62b4eaeecc51a92341e909058c.wav
+ - src: "кыргыттар аны хатыҥнарын нөҥүө өттүгэр түстүлэр"
+ - res: "гиттонанвдт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.890909, loss: 146.917465
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/894ef2c4dc1ec9ad7e92d8a9f6820a383cbc6a926f2403f8a1165d8a9e47738741b7fecd8817f85a705693a9f2716c8a4f1b195aed3eccfbff33f87bd00f89eb.wav
+ - src: "эҥэ сиригэр урут хаһан да буолбатах улахан уруу буолбут"
+ - res: "исонматудст"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.812500, loss: 148.062317
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/3cd827119091a5f306af071104db87e253a9beaf2014cf3866da306fe5e551c31080804b5d64b9eee08fe5602c1ae9875942a7bff943968027dbf270f46323ed.wav
+ - src: "оһун улахан аҥаарынан лапса симиллэн хаалбыт үһү"
+ - res: "нахассиат"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.820513, loss: 150.494644
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/13b9c53c164a83344fc5044c10a4e8fc885bda2d75acf934fd1192843e797f8032b9d73f262844d4cf30c5a95f69f758d0a952e1dfc243de4a41f88f56002edf.wav
+ - src: "эппитим дии көрөөт да сөбүлээбитим диэн"
+ - res: "киткитин"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.800000, loss: 150.497208
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/a9f56e180c899e581613647b6758083015ff00128163d5d716e676c6bd564846215266d68ab0aaa926dbd5d08cb86b0358313c2a84e2f3ec6246bce481d0bbee.wav
+ - src: "аҥаар буолла кыыһа суох кини остуолба курдук турар"
+ - res: "амауосиофтндтт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.829268, loss: 150.722336
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b2eb3f6496f2f1ecaea54ca16a992722c523917350577b21b0c2c5e2357183d5cf2626fa8360123cfad8ac697f4af1babb92ae021085da41a153c933c7bce302.wav
+ - src: "онон уһун үйэлэнии утумнааһын буолар эбит"
+ - res: "наннаннанн"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.843137, loss: 151.722580
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/1aa51e2a5560f1a3f16098cb059265435923a559344c02a5d092a83ba261c86fca2daecd661e082d5dbb75c8ddbf1163df700755ab4e85691ba07c15d448d9f2.wav
+ - src: "суох мин олох уорбалаабаппын кыргыттар уонна маамам"
+ - res: "сооуабажа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.833333, loss: 153.137024
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/16efbbc248d42a6cb2d0ca2674c0a6f340c7b53f704ff7ca2011ce0fd7182cfa79aad153247f6a87a6ec6803b8db20975c0e1444b708ae1e4a45c56726e7b251.wav
+ - src: "кыыһым эмиэ олох кини буолбатах диир"
+ - res: "анимотиуауи"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.877193, loss: 153.989273
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/ba0a841aca99cde61eb306153f7470a641cd9b59820b73d784aff0507832772a26b813a98ea2a8cb13ebcceae9addec09a1d2da0a2766f1b98ea6c0d43f5f068.wav
+ - src: "ону тулуйбакка натаайа солуурун ылаат хотонугар ыстаммыта"
+ - res: "таууайасхи"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.870370, loss: 159.250717
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/a78660729a9e761bfdd295d88b3e957af9940b9296af42bf879bd4e0da253b138a002966b6f8949885de35679dfa235ff3941ef955b04fd151e98f0d108dcbd1.wav
+ - src: "биирдэ сир үүтээнигэр хоно сыттаҕына абааһы буулаабыта"
+ - res: "ингитпотиуионт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.888889, loss: 159.859741
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f3ea88483a550dd399027ab94ca243ef08168b001f76ea6d7f7541d49b0d863bd7b248612a5e58f9873c9ed8af82ad6e849eac2b9fd9482b965f83c5ce827cfe.wav
+ - src: "эрэйдээх тыына быстыар диэри аччыгый уолун кэтэһэ сытаахтаабыта"
+ - res: "агхаистиуидт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.825000, loss: 159.969162
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/0574f1d0d0f2e8c17e28616adc753e3d13f5b25ca33cfd2d3060497cd252653ff8aaeb45c483e8c83762f585493f33938b5998c492b1e2cca412c1c853602c88.wav
+ - src: "чэ били мин көрдөрбүт сибэккибин ылыахха"
+ - res: "библиополиана"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.773585, loss: 160.382919
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/170d3a16086ccc04bb32768571eb419e8b01d0ef0cdc61c1a0311adca0cd5f231c269b78b50fd3a058f7831cba185e101e3eda198f952c1bc1dc27964106145c.wav
+ - src: "дьахтар ону бэлиэтии санаата ол гынан баран саҥарбата"
+ - res: "аатааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.809524, loss: 160.527420
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/bfacba485b38b7f2df3c8310794599a1f2e5f6a1e33145eb527ec50f4a22b4ef14aa9ebc0c19bceae6d4a0363fcff1df71de5e217781c0e3b32d7d1f3c1648da.wav
+ - src: "ол эрээри абааһылара уот алгыһын истибэтэх"
+ - res: "алабатусонполит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.885714, loss: 161.450592
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2a806ac438019f57d8477b5ec675e663cba01dda0a949a45253765e47ecbcc1ecfc35fee50ece8b8be951fde31dbabc38a85edd14697cc690912db78b646d65d.wav
+ - src: "оскуолаҕа учууталлар тылларын истибэт үөрэхтэригэр мөлтөх аатырбыттара"
+ - res: "уатманиат"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.872727, loss: 161.576752
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/694ae12c6aa4ca40346adb089d725c013bb8bf9b3c5bb40c62c9b7e711946a06bc6c2cb5b5f23d96993df4cd5ed936a117e8c7a4bed3cb1f3dab9749cee26cfc.wav
+ - src: "бырдах бөҕө түспүт киниттэн көмүскэнэн түптэ оҥостуммут"
+ - res: "аесикангдситм"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.826923, loss: 163.537521
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/df3b5959789298a7fe4088182fef80a636b32bb5d55207367c51e46e826ada9870e78039ddcd3ddb95886ac7ca7fb0256d4aa0c8154f5e03b73c932645589118.wav
+ - src: "хайа күн биһиги табахсыт муҥнаахтар табахпыт айдаана"
+ - res: "лингитеаснднтит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.829787, loss: 165.076035
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/31516bb733f6a24fccaed01f44efacfe2f2f29cf8e207d8742bdba946c3a19217651de285112d5e7fd8b71b61675b038e5db80c0fbe6306f5547aa9b35e8d36f.wav
+ - src: "ол көрдүү сылдьан биир көҥдөй төҥүргэскэ тиийэр"
+ - res: "банкбсдакдст"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.853659, loss: 166.603271
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e99bea6a49fb63daa60f6859b4d894bf1f4f12bce69f31a2ae037bdc5a4c3c65a3ba7e7be0fc4ab9e8fce6ebb9573c4024729709658660d6a42d9de4e8c98f91.wav
+ - src: "дьоммут бултуу барбыттара да кэлэ иликтэр"
+ - res: "уабаки"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.815789, loss: 166.772339
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f5bf64bcef381ca7c3f9484cdaadaf37928adb5981412506e91cee4d3734dcfd79c9c1e87464ded89af1550de9626e5d3d3bec806b6df9140d01c0401c8a537a.wav
+ - src: "диэн өсөһөн туран бэрт нэһиилэ тиэйбит"
+ - res: "иссатвиби"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.829787, loss: 168.184189
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/4017d7fb684020a5a9b3565b9871d3bce8540939a074a778c32ed71c02285411e91659eeabde939bcabfcdd3cffa4b5bcecd7de6f0506e7a28b6516aa91ba442.wav
+ - src: "тугу да кистээбэккэ эттэххэ үс сылга түбэспитим"
+ - res: "усалагибигибигиб"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.875000, loss: 168.634491
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/7a38cd156056141041a19d3e758f4a18d92bb54f08477be1321ff34988be2235a25a3ca5b49148292d37899c271e992d6c037b4d9bdeebb7910b4696d6194537.wav
+ - src: "дима күһүн уоппуска ылан кэлиэх буолбута"
+ - res: "зивктуса"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.818182, loss: 170.925980
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/468568d16723769e323dc899090af668e3d2e74ef13747472f78d32ca7dfa13f7aa1a943e5be51719f76f57b0a00000c815a08a72bc6bf684c918b82a2791593.wav
+ - src: "киирээт да оһоххо биэсалта хардаҕаһы бырахта"
+ - res: "тахонасолат"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.854545, loss: 172.333832
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/feed2c02dd3b334f6a74e7c9a1b3b41a70244c9f34eda52266fb04f9299f52ba5e3de8ba6276192fc1f816792a026ed8f6aa425d8a8e6e1762669ac5fa9c91da.wav
+ - src: "саргы сибигинэйэн этэр уонна ника иэдэһигэр сыстан ылар"
+ - res: "гсиннтка"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.836735, loss: 172.376083
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/442fd7feef3fb748bdc9205d7e0b578f114782a85b48e4a0bcc94d573ef08b53f13d56e5ef2b028fe5f7a622a344d1d28765bc2513d2dd7e7de5dfb707c04412.wav
+ - src: "кыргыттар таһырдьа тахсан отон ыраастыы олордулар"
+ - res: "гиттаттовиа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.839286, loss: 173.087570
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2333193108bc55e214973dc27fa4f8c700df52490a92760e20198d38e0a8994d0f8554bcc63edd64a9a31b5be79e6b88f2636ef96f1805fe8b057edb9a0d055e.wav
+ - src: "сарсыардаттан ким тугу гыныахтааҕа барыта чуолкай буолар"
+ - res: "тасритдсатак"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.857143, loss: 173.253555
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/231204c563bce65e653bd4a716bff0abb72dd534835b71723d4b4aa8255af5ef24d62d9ee66ac00fcdf46b69e7b35d5c2394bcfca3e8726ff6d6e5e13b506be8.wav
+ - src: "дьиҥэр бэлэмнэммитэ буоллар туттарар кыахтаах этэ"
+ - res: "ираларала"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.813953, loss: 173.449799
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/3bdb7aa39c98722eb8357978f6ffc67b0662cf0abd875fe212a4b5adfb035ac586f12061930ea52a8b83e1a5f520edbc258c03da5d888ff903257ecafa2c3efb.wav
+ - src: "арааһы санаан дьэлиэнэ түүн аанньа утуйбата"
+ - res: "асажониант"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.853659, loss: 173.652542
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/84236903586dec5a5f4f1e709ba5e3d050853b888be6e726763edbe0bc90b368ffd86c6c3c800e690e2c6d2051e1dca8c9714483b73d27e55c07684ff6020818.wav
+ - src: "ол да иһин буолуо киһилээх хайата дииллэр"
+ - res: "ииииииииии"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.833333, loss: 174.034424
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/aca5772a70ac1af196e408408fb101f51071ca2c0f5f0a715a6f8f41e4c415077af8ab66da313eecebb2663b39952ef108f22dcf5f9c4cae70cb3036f4db0f07.wav
+ - src: "дайды маһа киилэ суох буолар эбит ду аата кэбирээтэҕэй"
+ - res: "амасанузиндтт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.785714, loss: 174.111496
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/4ad4d38bf6571be8233dd2619f614a496f6f86610b19a643ec9444085a2b68fab0746f6bec9d65d62a000c16365e775c6c4f203151a23e423907d159ac7b07bb.wav
+ - src: "туран иһэн сирэйэ итийитий гынарын билбитэ"
+ - res: "тинтибили"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.803571, loss: 174.339996
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/80d6b05515b586a8cce4cb118db0f3102c43ef7cba01e0985e2fa00bd05bcdbb4737071c4df10d94b5197548ee778f2a57f6774ff6fe2135da59dea18d5aebea.wav
+ - src: "дьиэҕэ утуйбут кырдьаҕастар күнүскү ыам саҕана турбуттар"
+ - res: "иттасатамана"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.794872, loss: 175.777100
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/6c126d951b0fabc060537cf79f0b8878e92ef2c63836dc9c356bcc3c78b55f044ef1bc17c11a39ca4d7a1d43133cd547925b4180f0ade0a808b136bf96b8f4e3.wav
+ - src: "хас үүтээнин ахсын кинигэ долбуура баар"
+ - res: "тастапсилла"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.863636, loss: 177.131012
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/832d1b44af9d3a8a132d79a74120f795c3226b8305f6c0003eebe24a47261b15cb136f80b4c5a98a9b94cb0e4f8460c05d3183cb817d974485777f759e0cb778.wav
+ - src: "туох да буолбатаҕын курдук дьиэтигэр киирбит"
+ - res: "уоснаудлли"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.901961, loss: 177.307510
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/32d3b08cc79f43a3c1250b3d757b6ca1272fd66cc20081381cefe8140b7a59679c44e82c6e564f24bfe49e198b7c96f0d1db90c38d3e677169d593948f4e6113.wav
+ - src: "онон дэриэбинэҕэ саамай тутаах наадалаах үлэһит этэ"
+ - res: "атинасиан"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.800000, loss: 177.382172
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5873b587ca16a8c5d28eef5bc9a78588e4d7a40b340637617003491d14fc742c6644bf4a0c7851877e975c065e01579e5f0f04ab9cdea2fee1660ed035c018ee.wav
+ - src: "ханна баар ким көрбүт абааһытын ыйытаҕын"
+ - res: "аааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.824561, loss: 179.071533
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/c054b94f74de27ca180b8233f8fefe19f92be4adba2312a120b5bf6351e50355928681a80ed48c51a5c7ba04e083de07e64a1fa487bd397097933db181bfe14d.wav
+ - src: "тимаҥ ханна саста көрдөөбүккүн ылан саҥаҕыттан маттыҥ дуо"
+ - res: "аааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.871429, loss: 179.533829
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/ff458328c2e6a66a87b35b829dd94ace0161f56575305e3924465d453af889d57b7d93d00ee5048a493475f2a888f05afa5341a3d2f0dede9b3202c2acb671e1.wav
+ - src: "массыынаҕа киирбитэ алешата кыыһырбыт курдук туттан саҥата суох олордо"
+ - res: "ахаилабилиуидт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.882353, loss: 179.740906
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b4bf2931b0a0830fd9f5453682ca0ef24d872d7442c65c0dbed79e0050a27f9f240f2ecdf3b7338153febe850a43a4275a7caef31e2f70f3a028c61cb33cfeb3.wav
+ - src: "ити дьиэ кэргэҥҥэ улахан үөрүү этэ"
+ - res: "ттаууохаи"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.866667, loss: 180.280411
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f97c41241afc1d87c9363bdc583c663c99b7387fc9cfd7f721ae8183427e5f1f557bfd5f6c178bf629a45662350a055f3c7b50d4c96eb653f695b2a121f6395b.wav
+ - src: "атах оонньуутун бары көрүҥнэригэр дабайах баатыр куоталаабыт"
+ - res: "товиалгдмоксауит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.825000, loss: 182.025574
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/3ea4814a4695ec50c737490aacbe1245a35962e7f612f5e6a27f99c911c05e6ba63c0e7cee534c37b7754f5b38fe6241d5e2debd4681c5c002a412e58ad0935c.wav
+ - src: "тугу аһаансиэн сылдьыбытын ким да билбэт"
+ - res: "аниануиттдмдн"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.901235, loss: 182.826614
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/a06e23d81eb9d208ca01f7b9a2bc34e835a1b153cfeb5f3b1be29c407f968d1c071688e23b020677741281fcae45b5de8cd7db1ffad43b28dbc252817bf309a9.wav
+ - src: "очорой баатыр аҥаар атаҕынан кылыйан куотан истэҕинэ дьахтар икки ардыгар түһэрэр"
+ - res: "сайатдхана"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.905882, loss: 183.139160
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/76f478b582692e3c51daf11c4e93392e285eb4f37547ddbc5443c6e5fdae178d5f381d6cd0a7353ba0ec16e3679836a734faf147da13711f4cf3de4c7819a2ea.wav
+ - src: "киһи итэҕэйиэ суоҕун курдук хайдах итинник буолан хаалбытай үчүгэй баҕайы уол этэ дии"
+ - res: "итсдалиудт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.818182, loss: 184.193558
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e951020222c049304808e30d1c051090eec05b2b06917bdb340dca80830583754530bbb867e998bf9365a3f4bca3bbd3c704969bde105b56b416e06289a99cbd.wav
+ - src: "инньэ гынан ол таһа кэнники ыһыллыбатаҕа үһү"
+ - res: "кинаткилат"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.818182, loss: 185.687180
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/99a7d7006e7c7b22c3bf4af9435a0790ee7b3d1d203f4b763732dfde3d40c8b83ec2085d1012238e78c6abaa7448f044fe7d4e9b4e3d448b4020194e40213c8f.wav
+ - src: "билигин даҕаны сарсыҥҥы сырдыгы көрүстэрбин дии сытабын"
+ - res: "инднассаблдт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.800000, loss: 186.379105
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/505d67eeeb3af1709e71325b13679cfbda8e689aa766d847a4ba1a7a45b30a21969d3738a8b516dab1615718477ad133d0fbbc4e8c8a4f5d1c370c21ac3bbc5c.wav
+ - src: "оччолорго бу уола кыра оҕо этэ"
+ - res: "тоооооо"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.826087, loss: 187.834885
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/555e014b0eb2019bae145e1abe3e9b190d25630a1a4808463e9c48c2fcdede6f5108d6d1b4d2addb2124934e2c88c96444c2edad4b555d1b6d97487753b8c76f.wav
+ - src: "эс хааллардым диэбитим тутан турар эбиппин дуу"
+ - res: "акбиуанан"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.885246, loss: 188.076126
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/86ea3343964fed0cbf2d38c5da394b417378de822196b0485d404255a05d3834f3ca1fe26a526c71b1813a22ed1f3c7531dbd335edd789e1e66d750e09a6eab5.wav
+ - src: "хайдах буоллуҥ биир да дьээдьэ саһан сыппат туохтан куттанныҥ"
+ - res: "йанниттасидт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.886792, loss: 188.534958
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b5b46a60642e1723c8de4f82313378effc9a77e7518778c542dda5334c0b89bb23c678970774e6ff798da24dbd38c0045de81cad06a0759786fb1bbcdb99ba56.wav
+ - src: "көрбүттэрэ балаҕаннарын аана аһаҕас аҥайан турар эбит"
+ - res: "гиттовиалит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.888889, loss: 189.153290
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/d556b74e8f5f2f66766ac28be268a81efcbc8766de8335e197ead58a6c70d0b4da1db00500ad7c48b07ab8ac1af328e9d72958e492f7c1e0137ccb6bbf7a97ce.wav
+ - src: "охсуһуу буолбут сиригэр уу чуумпу буола түстэ"
+ - res: "осгинаис"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.871795, loss: 190.134537
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/98bfb203aa072a81d6902444a92d5b47173a10412807521f70433c7d049c4ebfaaa116dd47c97ee3260bd184b1ce5116f1d45d0cf4f137a1f36c46bf3c7f74a9.wav
+ - src: "аһа диэн мунду ынах тыла олбу үөнкөйүүр"
+ - res: "туалинтки"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.850000, loss: 190.509506
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5c16a105b0b4dc3bb48a5a4fbbcb6fdf9e9962818c28fdecf3ab5242506e51998e8bfddf8156172a8961b93bfab7b73561d21b67c169d1f26ee436eb97f203a2.wav
+ - src: "куоска сыппыт таҥаһа да суох буолбут этэ"
+ - res: "касмасбаси"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.841270, loss: 191.154144
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/c7246f471d36ded45363564988fcfabd64ca7766e8281b6f88da17d691bd62e3fc6daa9e868abebb54d079403cb96a4b70364747c13eaa233138f016aa850b9d.wav
+ - src: "арай ийэтэ кыра эрдэҕинэ аһыы олорон итинник сэрэтэн унаарытара"
+ - res: "аттитуадсоннонт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.884615, loss: 193.005463
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f88083ff374511136aafb0e40bb7b17a0ab2b1a191ba3510e5750365dfbb1570bb9690d777d5069e8483076e8a68230e2c03c988d7de01ab69815aa710599cb2.wav
+ - src: "бу да кыыс нина тохтоо эрэ"
+ - res: "блигт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.829787, loss: 195.256912
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/bc960038462c35b1cbe9c1bd15047cb232c08519c3bb5239be1cb2950ef22b57e6cd7c8bb57a81325a0e2f4a2c243f7c4f7808046c7be9c0775e1793108cceb5.wav
+ - src: "уол сүр түргэнник хомунан таһырдьа элэс гыммыта"
+ - res: "усантноннаин"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.882353, loss: 197.068390
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/90bf47defe43cc261423a318af5e077ac56dd998290c5c3f5d8d62df3400a1e134a5877ddc30ca1a8b15e40bc5f8ca58a6cbecbb4125e0a388023e7a01ffc201.wav
+ - src: "манна былыргы хаҥаластар туох сыһыаннаахтарый диэн боппуруос үөскүүр"
+ - res: "атузисаитхас"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.826923, loss: 197.101196
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/8671781a41c5d8e30d23523da5ae656fc2d619d941f35ef125c78b2ba13c6f2627aff8cd10f0799a41f928bb7db0be27030243d6533ffa883019740d854893de.wav
+ - src: "суох ким да суох этэ аан аһаҕас турарыгар киирбиппит"
+ - res: "сдусавуибили"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.870370, loss: 197.540070
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5bb67e81e6de7628ab45b4b2234cde13164ec26e8fa4e6ff62823b0ede6b16088cdd68ddb03981a07eed4033a6a7d393bcaf5f12d097888aae9e51658c8769cd.wav
+ - src: "хайа эн биһикки эрэ хаалбыппыт дуу мунньаҕыҥ бүттэ дуо"
+ - res: "басаббатдт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.875000, loss: 198.427261
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b9f5092b19cb6e28a785f35df90398f4e29a06157320c8f11a12c3559c9854b109c022236fb86f9682f083b6b82e8a3960f779b4b3252481140b4069510339ff.wav
+ - src: "дьоно дьиэ лээх киһини күндүлээннэр бытыылка туруордулар"
+ - res: "инхиуаттду"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.855072, loss: 199.268295
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/ad4d35ff6787a19342b1dc7cff96b19b9f3d19cf25db04516c76e795339c7f82513137928fecf686f46ef735a39c2f25624a1b389487ef5ecd4ba0c5a5cf33ec.wav
+ - src: "мин ол баҕайылары уулуссаҥ уонна өтөх алаас икки ардыларыгар көрбүтүм"
+ - res: "библиолаусидт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.840580, loss: 199.871719
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/a44ac8ac68daf1713906c6f12cb5654991bde2282ae3568af2fdfcc449287a0d209ec34b01bb9559ef7c9373c026c07932fca9767e677c7cc01bc7e89f1af6ba.wav
+ - src: "ити соторутааҕыта эмти тутан сиэбитиҥ куһаҕан да кыра соҕустук сиэтиҥ"
+ - res: "исатвибилиуидт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.888889, loss: 200.566116
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e407ba5efd68d44449c0c3636b4b041c0ffc94e856ddd6696e32794b8b3b019df7a046b6c1ea89a45fecbd6f54bdfb982e3867184587707c7d23e8a6d4bff42d.wav
+ - src: "арааһа бу орто дойдуттан арахсар кэмэ ыган кэлэн иһэр быһыылаах"
+ - res: "амабилиттима"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.822222, loss: 201.667480
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/8924589780ad4db8843fb566c8464270a50659e39b01b99ad0cfdf2611c32cedf912ac1c7724366646118e58ef239cc0a15d0dada77e7729642e61bdbb8ca905.wav
+ - src: "сүрдээх айан этэ диэн уос номоҕо оҥостубуттар"
+ - res: "сдтуосауос"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.844156, loss: 201.788361
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/0489e633030c075739d59fddc1fd8a8116b01b61f9317b880af0b782bf4ebfd2d0ab95d95c7a6d589003de6eecfe6858fcc9d72993d04037121ba31d9065d5ce.wav
+ - src: "улуус киинэ буолан соторусотору араас быһылааннар буруйу оҥоруулар тахсаллара"
+ - res: "усалалалалалала"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.876923, loss: 202.476440
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/14c5b8d09adc98b87f1c5a9844de90a0f10e8676183f5c69cc71d0b5b68e4657f1230afdcdcd37463cd9a1b4bc6e912ef32df62817225ad837c850c1e10a88e6.wav
+ - src: "кэнники сэмэн быа быстыбатаҕа буоллар мин сүүйтэрэр этим диир үһү"
+ - res: "митусантлауин"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.857143, loss: 202.523712
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/44a05e100c7e7521764f9210b5d97931cbd6170c84f324c507da47dfba0b5ed767d718e88a89fd45e5105678ff89e344c76a311a61c682d99ecbacb6539a274d.wav
+ - src: "кинилэр чуумпу олохторун аймыах онтон атын туох да суоҕа"
+ - res: "кисуанатила"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.854167, loss: 202.870087
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/beac80f73447bceb79a0279fe0514f4bb400c231c347bbd3c9591dfb4552dc355ac609c936699ed9396c9875c0eeadf42129df05ee67e53190d7259cb42bf43f.wav
+ - src: "үрэх балыга куота устан хаалыа диэн наһаа ыксыыр"
+ - res: "колокоусини"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.823529, loss: 203.082397
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/48a7f6c847cf13514d05c3a9d8a2a0efb9eefe15b52b950e73ca3b2bd4b3b636bf30ba29e181c5298f95402e46a1749e2da97eaefa8ad1f4847b49d8dfae7546.wav
+ - src: "наар уопсай дьиэҕэ иһиллэһэн олороруттан олох салта"
+ - res: "ахдлланота"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.868852, loss: 203.148773
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/70ce624faab3186f80676138e82d3470e8adef35c05457da53d0f4b4b570cf4d7d5cd38a4d47a44dfada26a99d9682ea13bd7650de980340022df557fb3a3467.wav
+ - src: "кыра уҥуохтаах саастаах дьахтартан миин кэтилиэт атыыластылар"
+ - res: "кососасдка"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.836735, loss: 203.324356
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f341811847223525b4795e4fb3edb4737c33e6c55b5510ea4fcb057cdc7d6520890e9dcdc9629effff022e8f451c72b82f1c43c2a64559434b142c79721c6223.wav
+ - src: "саргы кэмбиэри арыйан ааҕан баран олус да соһуйда"
+ - res: "саббинаудт"

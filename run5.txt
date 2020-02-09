@@ -1,0 +1,708 @@
+Все Дорофей
+###./DeepSpeech.py   --train_batch_size 10  --test_batch_size 10   --n_hidden 1024   --epochs 180   --early_stop True   --es_mean_th 0.1   --es_std_th 0.1   --dropout_rate 0.30   --learning_rate 0.0005   --report_count 100   --train_files ../sah_6h_2019-06-12/clips/train.csv --test_files ../sah_6h_2019-06-12/clips/test.csv --checkpoint_dir ../checkpoints --alphabet_config_path ../alphabet_sah.txt
+
+
+
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:00:54 | Steps: 97 | Loss: 209.408194                                                                                                                      
+Epoch 1 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 184.182946                                                                                                                      
+Epoch 2 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 150.563866                                                                                                                      
+Epoch 3 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 123.947825                                                                                                                      
+Epoch 4 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 102.329644                                                                                                                      
+Epoch 5 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 87.939031                                                                                                                       
+WARNING:tensorflow:From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W1107 22:27:59.882311 139927501215552 deprecation.py:323] From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Epoch 6 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 78.648833                                                                                                                       
+Epoch 7 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 70.897309                                                                                                                       
+Epoch 8 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 63.821246                                                                                                                       
+Epoch 9 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 58.178632                                                                                                                       
+Epoch 10 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 53.787448                                                                                                                      
+Epoch 11 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 49.539301                                                                                                                      
+Epoch 12 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 45.364394                                                                                                                      
+Epoch 13 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 42.323832                                                                                                                      
+Epoch 14 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 38.568311                                                                                                                      
+Epoch 15 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 34.767355                                                                                                                      
+Epoch 16 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 31.060992                                                                                                                      
+Epoch 17 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 28.189888                                                                                                                      
+Epoch 18 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 26.516788                                                                                                                      
+Epoch 19 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 24.489159                                                                                                                      
+Epoch 20 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 22.506164                                                                                                                      
+Epoch 21 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 20.021026                                                                                                                      
+Epoch 22 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 18.406708                                                                                                                      
+Epoch 23 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 16.403005                                                                                                                      
+Epoch 24 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 15.495998                                                                                                                      
+Epoch 25 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 14.485050                                                                                                                      
+Epoch 26 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 13.569108                                                                                                                      
+Epoch 27 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 12.192508                                                                                                                      
+Epoch 28 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 11.289570                                                                                                                      
+Epoch 29 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 9.962347                                                                                                                       
+Epoch 30 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 8.823737                                                                                                                       
+Epoch 31 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 7.817806                                                                                                                       
+Epoch 32 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 7.609602                                                                                                                       
+Epoch 33 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 7.389374                                                                                                                       
+Epoch 34 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 6.824893                                                                                                                       
+Epoch 35 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 6.301620                                                                                                                       
+Epoch 36 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 5.888050                                                                                                                       
+Epoch 37 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 5.545903                                                                                                                       
+Epoch 38 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 5.453698                                                                                                                       
+Epoch 39 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 5.425984                                                                                                                       
+Epoch 40 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 4.943699                                                                                                                       
+Epoch 41 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 5.084690                                                                                                                       
+Epoch 42 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 4.913283                                                                                                                       
+Epoch 43 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 4.858221                                                                                                                       
+Epoch 44 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 4.485637                                                                                                                       
+Epoch 45 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 4.329303                                                                                                                       
+Epoch 46 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 4.540474                                                                                                                       
+Epoch 47 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 4.123238                                                                                                                       
+Epoch 48 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 4.038628                                                                                                                       
+Epoch 49 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 3.742300                                                                                                                       
+Epoch 50 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.790479                                                                                                                       
+Epoch 51 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.625317                                                                                                                       
+Epoch 52 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.988842                                                                                                                       
+Epoch 53 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 4.101573                                                                                                                       
+Epoch 54 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 4.266740                                                                                                                       
+Epoch 55 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.477619                                                                                                                       
+Epoch 56 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.702084                                                                                                                       
+Epoch 57 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.835564                                                                                                                       
+Epoch 58 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.442216                                                                                                                       
+Epoch 59 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.168589                                                                                                                       
+Epoch 60 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.958953                                                                                                                       
+Epoch 61 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.925038                                                                                                                       
+Epoch 62 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 3.159027                                                                                                                       
+Epoch 63 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.201701                                                                                                                       
+Epoch 64 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.369412                                                                                                                       
+Epoch 65 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.129006                                                                                                                       
+Epoch 66 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.779633                                                                                                                       
+Epoch 67 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.887411                                                                                                                       
+Epoch 68 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.653882                                                                                                                       
+Epoch 69 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.014093                                                                                                                       
+Epoch 70 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.935065                                                                                                                       
+Epoch 71 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.911032                                                                                                                       
+Epoch 72 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.570442                                                                                                                       
+Epoch 73 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.549526                                                                                                                       
+Epoch 74 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 3.114843                                                                                                                       
+Epoch 75 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.392677                                                                                                                       
+Epoch 76 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 3.223738                                                                                                                       
+Epoch 77 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.834754                                                                                                                       
+Epoch 78 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.941331                                                                                                                       
+Epoch 79 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.814109                                                                                                                       
+Epoch 80 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.810537                                                                                                                       
+Epoch 81 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.731277                                                                                                                       
+Epoch 82 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.125022                                                                                                                       
+Epoch 83 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.052452                                                                                                                       
+Epoch 84 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.320789                                                                                                                       
+Epoch 85 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.490914                                                                                                                       
+Epoch 86 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.449058                                                                                                                       
+Epoch 87 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.377695                                                                                                                       
+Epoch 88 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.608099                                                                                                                       
+Epoch 89 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.947043                                                                                                                       
+Epoch 90 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.612667                                                                                                                       
+Epoch 91 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.647114                                                                                                                       
+Epoch 92 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.696940                                                                                                                       
+Epoch 93 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.236960                                                                                                                       
+Epoch 94 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.243798                                                                                                                       
+Epoch 95 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.541866                                                                                                                       
+Epoch 96 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.354970                                                                                                                       
+Epoch 97 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.264860                                                                                                                       
+Epoch 98 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.430844                                                                                                                       
+Epoch 99 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.039077                                                                                                                       
+Epoch 100 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.954261                                                                                                                      
+Epoch 101 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.059859                                                                                                                      
+Epoch 102 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.078789                                                                                                                      
+Epoch 103 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.173828                                                                                                                      
+Epoch 104 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.936853                                                                                                                      
+Epoch 105 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.328072                                                                                                                      
+Epoch 106 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.433577                                                                                                                      
+Epoch 107 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.375822                                                                                                                      
+Epoch 108 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.395996                                                                                                                      
+Epoch 109 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.658293                                                                                                                      
+Epoch 110 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.302345                                                                                                                      
+Epoch 111 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 1.865359                                                                                                                      
+Epoch 112 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.101326                                                                                                                      
+Epoch 113 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.355115                                                                                                                      
+Epoch 114 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.665519                                                                                                                      
+Epoch 115 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.084902                                                                                                                      
+Epoch 116 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.429524                                                                                                                      
+Epoch 117 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.228266                                                                                                                      
+Epoch 118 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.834640                                                                                                                      
+Epoch 119 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 1.839018                                                                                                                      
+Epoch 120 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.293914                                                                                                                      
+Epoch 121 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.017556                                                                                                                      
+Epoch 122 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.136485                                                                                                                      
+Epoch 123 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.148765                                                                                                                      
+Epoch 124 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.250531                                                                                                                      
+Epoch 125 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.480048                                                                                                                      
+Epoch 126 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.542673                                                                                                                      
+Epoch 127 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.045359                                                                                                                      
+Epoch 128 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.809346                                                                                                                      
+Epoch 129 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 1.989078                                                                                                                      
+Epoch 130 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.838332                                                                                                                      
+Epoch 131 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.040384                                                                                                                      
+Epoch 132 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.220332                                                                                                                      
+Epoch 133 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.018058                                                                                                                      
+Epoch 134 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 1.951895                                                                                                                      
+Epoch 135 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.414454                                                                                                                      
+Epoch 136 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.932914                                                                                                                      
+Epoch 137 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.770486                                                                                                                      
+Epoch 138 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.254849                                                                                                                      
+Epoch 139 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.342561                                                                                                                      
+Epoch 140 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.311671                                                                                                                      
+Epoch 141 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.430415                                                                                                                      
+Epoch 142 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.098928                                                                                                                      
+Epoch 143 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.057042                                                                                                                      
+Epoch 144 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.585912                                                                                                                      
+Epoch 145 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.895631                                                                                                                      
+Epoch 146 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.008507                                                                                                                      
+Epoch 147 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.507916                                                                                                                      
+Epoch 148 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 1.859185                                                                                                                      
+Epoch 149 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.035590                                                                                                                      
+Epoch 150 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.709445                                                                                                                      
+Epoch 151 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 1.831266                                                                                                                      
+Epoch 152 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.999356                                                                                                                      
+Epoch 153 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.822226                                                                                                                      
+Epoch 154 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.858387                                                                                                                      
+Epoch 155 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.003873                                                                                                                      
+Epoch 156 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 1.972588                                                                                                                      
+Epoch 157 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.087530                                                                                                                      
+Epoch 158 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.934583                                                                                                                      
+Epoch 159 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.059115                                                                                                                      
+Epoch 160 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.737285                                                                                                                      
+Epoch 161 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.784873                                                                                                                      
+Epoch 162 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.665422                                                                                                                      
+Epoch 163 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.425432                                                                                                                      
+Epoch 164 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 1.467277                                                                                                                      
+Epoch 165 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.624332                                                                                                                      
+Epoch 166 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.818820                                                                                                                      
+Epoch 167 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.007606                                                                                                                      
+Epoch 168 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 2.221531                                                                                                                      
+Epoch 169 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.332058                                                                                                                      
+Epoch 170 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.967954                                                                                                                      
+Epoch 171 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.800752                                                                                                                      
+Epoch 172 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 2.258150                                                                                                                      
+Epoch 173 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.855043                                                                                                                      
+Epoch 174 |   Training | Elapsed Time: 0:00:51 | Steps: 97 | Loss: 1.708548                                                                                                                      
+Epoch 175 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.310812                                                                                                                      
+Epoch 176 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.232199                                                                                                                      
+Epoch 177 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.448393                                                                                                                      
+Epoch 178 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.846325                                                                                                                      
+Epoch 179 |   Training | Elapsed Time: 0:00:52 | Steps: 97 | Loss: 1.782058                                                                                                                      
+I FINISHED optimization in 2:36:55.237527
+WARNING:tensorflow:Entity <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f425444ed30>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f425444ed30>>: AttributeError: module 'gast' has no attribute 'Num'
+W1108 00:59:37.666965 139927501215552 ag_logging.py:145] Entity <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f425444ed30>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f425444ed30>>: AttributeError: module 'gast' has no attribute 'Num'
+WARNING:tensorflow:From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+W1108 00:59:37.727759 139927501215552 deprecation.py:323] From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from ../checkpoints/train-17460
+I1108 00:59:37.728726 139927501215552 saver.py:1280] Restoring parameters from ../checkpoints/train-17460
+I Restored variables from most recent checkpoint at ../checkpoints/train-17460, step 17460
+Testing model on ../sah_6h_2019-06-12/clips/test.csv
+Test epoch | Steps: 23 | Elapsed Time: 0:00:33                                                                                                                                                   
+Test on ../sah_6h_2019-06-12/clips/test.csv - WER: 1.000000, CER: 0.862885, loss: 181.204605
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.808511, loss: 14.602155
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e6315d86c6973d83553b5fa1e703383107c167717a46e8be8b132477d555bccd8e1b8ccb41b2263865d2fb1d9af5e95217dba71349a0ed71025403bd677ba967.wav
+ - src: "оҕолорун бүтэһигин көрөрүн сүрэҕэ билэн турдаҕа"
+ - res: "лонгинднтд"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.800000, loss: 21.572506
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/4a5c45982366a08c426b8d187d39422816a3ee9c9bd43e6f8232912b730f001d3faaecfa50fd20b8449592b5656e1f6693bcd6ad57327735d98f72f22bcbbe21.wav
+ - src: "наһаа үчүгэй киһи наһаа үчүгэй киһи"
+ - res: "нааткигги"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.789474, loss: 23.179037
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/a892e15664fcb92e7d594de9676bf26ed5f971dd4b88fd58563832a521516ac230783de6659d4c692f7fdfc665048fa03245a40deb968d95b4c2c44af58a401d.wav
+ - src: "абааһы ол кэнниттэн олох сүтэн хаалбыт"
+ - res: "баллинхал"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.815789, loss: 23.677273
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2079bba8c4f98ac9b3db172d7f2c88b40ff6812cdf699830388990dccf4aeb6be872b13983f4f60ef8d74df01869f4cba76d311543e917ac59e951389f457df2.wav
+ - src: "аһын күҥҥэ иккитэ уларытан көрөллөр да"
+ - res: "книсктуад"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.780488, loss: 34.233517
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2188ce3aeb714fcd1c01790567c79a867fee0c7e614a32b6fd9edc5610e1b64b0f7d1cfbc985c23d4fb260bb77b5139d5a8a95f7298d81bffec2cb9dcbf02523.wav
+ - src: "сарсыарда эрдэ туран ас астаан ыытыам этэ"
+ - res: "саханатусонт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.828571, loss: 37.393223
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/1f6561441a5885c6831bd4dbf648766fbcb06e68ff4d68ee8344444d67a93dcf2228a6fb5cfed40f2da1cda2811d5aa9c71a4226040eea9b1f4953615bedc591.wav
+ - src: "бу туран арааһы ырыта саныы турабын"
+ - res: "туантр"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.809524, loss: 47.842941
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/db8589cc318e7d25d5648ca2b71524ce70e2440ea058d7c64b11cb36f8f450fdd7de747e019fba2f4cca133de4da5ef41af926ced1e964eb24c8e7372d8e9fcc.wav
+ - src: "диэн ат дьааһыгыттан испиир куттан киирбит"
+ - res: "насаттаса"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.763158, loss: 49.986370
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/c00059360e9853e132ae580092df5d518d6a5cc059a819da19ad6e1a7273d12faa6db8f2040a79ee38e81dc41c4d3ea1fda038cbb4b5bb3e3791ca50ca4eea8b.wav
+ - src: "сотору үрүҥ дьураа эмиэ мэлийэн хаалла"
+ - res: "сотддмауинал"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.844444, loss: 52.890831
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/1c802819bd829079fd724c381e44c369a85bd8816c64eec19675e4196948ca9aa2ad8f79d02bf88ba7af79c158447259673e1257c472afb5df8fa08ffc5ca89f.wav
+ - src: "үлэбэр тутулуннум былаана суох мунньах буолла"
+ - res: "лдуудсауо"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.876543, loss: 58.381710
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/7355bef15aa30e8a566545b0aaf6974316ccd055cd8804af72784a3e878f8b70a3e24ea9891a766510c8b24a740b4bb16380c0dbab021b9d6bedc7ef19e614b8.wav
+ - src: "хайдах буоллуҥ куттанан уолгар да кэпсээбэккин дии уонна хайдах тэйитээри гынаҕын"
+ - res: "абоминауионд"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.771429, loss: 58.733891
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/a3e2b80e6d058ee3fe7fabd58a116e09ae03a28b30fc4658c2e116f8f056ff7d0073a2362d9e7521613a2e35aac649c72518ffcc9e86a8f46cb721aadad943e4.wav
+ - src: "диэн баран кыыс диэки имэрийэ көрдө"
+ - res: "днбанкмд"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.800000, loss: 61.724842
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/11b219d19bc8106a76dd145f98181ce99f19f79a682f7b06b4a1b80fc85ae39c4162c37ba95a552b461475a1f312c27319e01c956611102188b544151ffe0df9.wav
+ - src: "дьоно уолуйан кыаһыламмыт курдук буолан хаалбыттар"
+ - res: "еонуанасотта"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.833333, loss: 61.875919
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5fb8b1d1ddb452b3d3f4068ac46d79515f6c89cf0973dc5172120106713ec14b2492b537923dc088f595bd881821fc0f91200c536bd16175c0ee4dce48891000.wav
+ - src: "отчуттары кэрийэ сылдьан ким төһөнү үлэлээбитин таабыллыыбын"
+ - res: "оттианитин"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.769231, loss: 63.151253
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/13bb6567eb8ca6763476836cb00a0f2fca9c157ed2d454dfa4be213b993344652e62ba94f501b4640634d708ecf5f276a68dc98f7578cc162c828a6a906248d9.wav
+ - src: "утары хааман тиийэн илиитин уураан ылла"
+ - res: "тамйинктина"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.868421, loss: 64.661972
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/8b44e70115794a8268ccd7818b99d66641386d07a20d659035cf3c1c5f02d15aec7205ddaca92f961b1ee96e901bf94f8a7334c2e316d9e5acb1d2f840efe277.wav
+ - src: "уолаттар ити үрэх баһыгар түһэн баран биир киэҥ алыыга ыстаҥалаан кээспиттэр"
+ - res: "уоуалиуасианит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.846154, loss: 68.491295
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/ea0bec3f68af3fe27800edb42aed0aec37213f648e434767534aa8bb7e2fca13ce647434bb449c2f6cc3b869dadd09bc92625cae8eb73d13dfa856d95559f153.wav
+ - src: "биһиги боруулаах нэһилиэгин кырдьаҕас олохтоохторо м"
+ - res: "иголаусидт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.818182, loss: 71.655281
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2dfcf59b85d996ae13c3f18da36aa1fd0e46fe7a4c86c4d3fb8563a0c07c68567f4f18c344fafc4eac92476e7e10dc9fc75759b8f533e59f3de1fe6b5c9a5dba.wav
+ - src: "билигин ол дьиксинэр санаата ханна эрэ үтүрүллэн хаалла"
+ - res: "игинжисанажин"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.840909, loss: 73.593643
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/96814e383eec06425e0b6e586be1858eaae8b7a47353cb40659f496b418541136b291f25a28955e7ea0d12730a4499cc46834251cef1a69819b068872aec6b20.wav
+ - src: "оччоҕо абааһы тоҕо наар киһи курдук буоларый"
+ - res: "оууамауомаккин"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.789474, loss: 73.937790
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5747621b704dbf17be9b120a2251c10361b0f0bfbfc056c561f8da91e7cacb301e994b74ef9bed650181af5b540835c3531ed56fd022a2e6dc3a754a14f133cb.wav
+ - src: "ол күһүн олус бэркэ оттоон киирбиттэрэ"
+ - res: "оонусохдстиалит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.854545, loss: 75.880096
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/0bb04993e7717048bbf15bb411f9516b1fad29e7261030f9de09e62d9f28c91064c5a95026d836063e1fc53ec5deaee7c47ddd831c7cf264ed0e3724475b6571.wav
+ - src: "ааппый бииргэ төрөөбүт быраата оҕус миитэрэй диэн баара"
+ - res: "йибайиба"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.870370, loss: 76.752586
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/950dfa4ef1a6316a4c1329fdd8c782cf23a99e21b52ffd4a0cb518dfb90dd00c71a543c9dd70df020b3ac9d098634be294c36de940d64e6b06793af96f7aea6b.wav
+ - src: "уола киэсэ онно балыыһаҕа киирэн сытарын биллэр биттэр"
+ - res: "окангангат"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.882353, loss: 77.391342
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/797ec622f8d0c9c5f20bef396721ea0a9afa97221d1c3144fbe5a72022ca3fc7432112f645b820c288a248081a012cb981ad18b91a2dfe122fbf40ea8ef0849b.wav
+ - src: "диэбитигэр хаһан да киниттэн хамсаабатах сүрэҕэ ньүөлүйтэлээн ылбыта"
+ - res: "бидниттимо"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.794872, loss: 77.431877
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5d3b5b436c4de4093d4e59b1df035a57683d2919c97eb470ac9b60b6fb486ed397d52e9347875eae26bb5c8ef2b46fa329622f35bc7e4b0303c4b2fdae002468.wav
+ - src: "истэ илик эбиккин дуу сүтэн хаалбыт үһү"
+ - res: "иссиуабилиуидт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.815789, loss: 82.403687
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2407634e280720482fada8cfc79aa1f8c2926f8313cf8be77fe2c688adc624c0ca89de1fc7fd39d2b199e5f6d392fd8933883f31133a355fe6c515c903125372.wav
+ - src: "оччо лорго хойукка диэри оттуур этибит"
+ - res: "огонауит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.812500, loss: 84.622284
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/fd3683b5549e08387ca0edc4aaaf85b91ee1e14aa6fc324cdbb11abf2a801713541382fb42f1861ff9084a78231dcd34e032f62f8c020cc5554e26f9f1dd5ebb.wav
+ - src: "эн ытык мааны ыал ыччата эбиккин"
+ - res: "мазалачми"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.807018, loss: 85.387901
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2a233a506d1282aceda43925020cdb0eb933ef4844af5b42f5957996862cdaa42b62b2ee97d8c6500b3663b09ba5a1386b97cd63ac25b741a100d6c528ce2880.wav
+ - src: "уонна баспытааталлар кинини таптыыллар хаһан да мөхпөттөр"
+ - res: "онтасуаинндтт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.800000, loss: 85.959763
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/55cdf22b1c39100692d79b705ab626066dc3e947af57c2b9668f44e8cc8e2bb5bcdbd9ca0d81d205a847d7742e58ee677f84140aa40ae764b1e9e4a4f396980b.wav
+ - src: "туох куһаҕана кэлиэй үчүгэй буоллаҕа дии"
+ - res: "халиолла"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.857143, loss: 89.956940
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2a6e85e520761dd7290c0f6d1fc8d0cb78adeac1b01ffb5eb7cd50e96c09817521a8671ad10588e2ade2467026cad047638e763b33c4c4ea47b4473e953457b5.wav
+ - src: "ити үрүйэ олдьо диэн үрэх уҥа салаата эбит"
+ - res: "тинуооит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.775000, loss: 90.556000
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e2176fbba49c9840644398e845c7a05e6a51c5e65d9330f1da024ebba34cdc915123c1c3b2d13efefa7f5ac8625e503a5821375e5bc8c94da49638f905c5367a.wav
+ - src: "хайа диэки мунньа барда мантан чугас дуо"
+ - res: "айауатаус"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.826087, loss: 92.118187
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/6eb01ff64854003a90c0dd2a37bed40da69879551f9295ea92f3026fa83a9927d218076d90366c1e3af61b8172a516ad396f80af88da1ab07d879db1c666192d.wav
+ - src: "мин оҕо эрдэхпинэ амма болугуругар үөскээбитим"
+ - res: "инхолануас"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.835821, loss: 94.802948
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/af49929dac8324273f950f1c48d80c33b9825e05dae8154bbe11099258c2f3c137efd8ea052c33ad091d79fa227c61e5f2a4ba6259aa94a7fe58c072d2f5c5fe.wav
+ - src: "сэмэн кыра сылдьан ийэтиттэн сээкэйи төлө туттаран ылан куотара үһү"
+ - res: "саесаивзиттану"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.846154, loss: 95.393936
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/3047e72fcb1a6bfc07da2d48bd7bc4be97bd29bef86448c50277e122d29ab35fdb1cc879021d6331589d69ab4389c7b54b18019e16439501959218734a6da660.wav
+ - src: "кыра эрээри эт лахса киһи утары кэлэн илиитин биэрдэ"
+ - res: "даласуиллд"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.855263, loss: 98.409592
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/60c14875cccec8ba319c7a799e7da20a7fe395243142f2373b51468736159a12adf685558da6c04b405458b56ab017fd1486687b66088931f1d132c5eeb7898c.wav
+ - src: "тыаны быыһынан барыаҕын куобаҕын уоһа киһини да аты да сатаан хаамтарыа суох"
+ - res: "бсабануоитдт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.750000, loss: 98.452057
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/04283df6131a5176ed68eb74a634762566b922c27913820fe4fbca1984b34814c4f29d9d595ce91547f5b8d6dd2053aebddd06fd8eb8feff68978aeabf279d80.wav
+ - src: "кыыс да дьонуттан элбэх киһи кэлбитэ үһү"
+ - res: "сддтуабилит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.800000, loss: 101.421326
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/7d2868c7e82008f2a5b91a23b40da1c976eb694567c03dc448ae2544831a01d0c24ef3f5075116dd302db1ff4b7c2d142d9d4deb3c7cd89a670e98ab891563f2.wav
+ - src: "миэхэ итинник санааны ылынарга ким күһэйбитэй"
+ - res: "кананаткит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.844444, loss: 101.495445
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/72630b401426ff492044a45dc47960f1e2529e688d43ae4a1a188763a606cb555e3ef569dd6e3b8ac10d5857c7c21590627a871391988016f7501eac91378c8c.wav
+ - src: "оччону көрөөт аттарын быһа биэрэн кэбиспиттэр"
+ - res: "уонрфинаит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.883117, loss: 102.554016
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/97e560da553f909e74c25b57dd3b735e3550939150b3ee05b5037e3c8753740976ad9e64aa3f651ec85c93374f719eda55ecc6c1a571407ea72ac6348c110183.wav
+ - src: "суох куоракка баран уолбун кытта көрсөн кэпсэттэхпинэ сатанар санаатын истиэм"
+ - res: "саханатусонт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.819672, loss: 104.010071
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/da846ffa744169961986389abf2a849bb01afac5eca4e485031fd0b1b9205e7320521999d71eb8649084bf38d2bcc0c975be0deae5de8fa250814c4872f19258.wav
+ - src: "ону көрөөт манна өлөр буолбуппун диэн сүрэҕэ айаҕар тахсыбыта"
+ - res: "ономауоподитут"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.829787, loss: 105.039207
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/182b9810f26bac4a96e80bcde1d8d8f578d1013269b322a0259ea9b2269a4df3148b8b1c35517222b99028cf8d349f0c2b722913e7996ceec9d96da5097dcd0f.wav
+ - src: "дьаакып саһа сытан кэпсэтэллэрин иһиллии сыппыт"
+ - res: "киссибилли"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.892308, loss: 105.881119
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/1d56419c3a3fdff6ba66500fd079eb9d40d71c60599a787e043c57efa69988f51b3af6ea12dd17c1c12f6561aed55b83e45b06d4e109c9072183dd98f11e4233.wav
+ - src: "уһун быаны баҕана икки ардыгар баайан баран быа устун сүүрэрэ үһү"
+ - res: "уабатвант"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.863636, loss: 107.479530
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/6b7c5a7efd8455b0d50da86371afdd7a7fb923e54bdf73df681cf0a0927531cd75ced12a1d65345d4072e2fdbc56536e055d9b6ced2c8dc3d6288c7739033776.wav
+ - src: "дьиэбэр барыахпын баҕардым да кыыһым кэлбэтэ"
+ - res: "ибабанан"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.804348, loss: 108.882805
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/eae774e33f69f83e10e16893c6bc68b4b9f0fd5af0c6d5bf4ae9f07bb0a00e2172b9f487b9204c72e687810034bfb47361c33bf119dc184a6e0eda660552e8c8.wav
+ - src: "ити дьыала кэнниттэн олох сылдьыспат буоллубут"
+ - res: "итиутоосноу"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.813953, loss: 109.444412
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f91f040e1cb74ee3e34cc25182f7bbdd3e94158ac67c2da255ee2cac2e782c80c035945d33f067b5eab757863391c307f184a35211d52426108eb430850e2e50.wav
+ - src: "ыыннаах иччитин туһунан хас да үһүйээн баар"
+ - res: "мнахануаса"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.813953, loss: 112.400009
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b1ff219c3a2d55b58ffee181830de019d1d040a5b762a1f1d24c2481d825969f2fbc39dbede3ccd355e8f9bcb340153082fa10d3768df7ffe26ed0240074dc11.wav
+ - src: "кыратык тэйсэ түстүлэр да ахтыбытынан барар"
+ - res: "аттитулдтт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.904762, loss: 112.711739
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/d981579c540a5cedb7d38cff733b66edc9c64ba15836c61a375600e59bd013217bbc2b5d46578cd627488ab1b8daf2882efe91cbaff3e11c20f66438de87b8a7.wav
+ - src: "сэрэмээт көстөкүүнү итирдэҕинэ көтөҕөн ылан ороҥҥо быраҕара үһү"
+ - res: "самандлла"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.838710, loss: 113.532051
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/32c88d0585809fc260e41263493285e0968573d09e5ecb1bf9c8aaf576678f7df5e004b3a167bee86aad1a7667c8f1f6a1411386b5357bab54e569c1fa485c1c.wav
+ - src: "киһитэ тустара кэлиэ дуо дьон көмөтүнэн нэһиилэ дьиэтин булбут"
+ - res: "кистуднлил"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.836735, loss: 113.766891
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/38bbbfecedaa6a5f9bd2c32a059da793a6a692ba4b8d1cfca76373c59ebe3cdd02e5a6befdb164d56274e1552768983f4faefd2ac15d9642777f2ae23f4e7ba7.wav
+ - src: "бугуһуйбут ахтыбыт курдук балачча өр охсумахтаата"
+ - res: "уаттималайа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.831169, loss: 113.800766
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/42abcdf57ee926a021d2bbc8d5984188922a73f8276d50918fa6da38a679095ab11aa3a08cd4f6b75bef8e0961e848bd91eb6b16b0a01b0c9a35be9933e2dcd2.wav
+ - src: "быраатыгар оскуолаҕа куһаҕаны оҥордоххо барыбытын тэҥҥэ буруйдууллар диэхтиир"
+ - res: "агсатуасанталандт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.826087, loss: 114.688797
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/db2d93a515ac40e1f34c616f297871655d8dd03cbd70e9be2cabea219a05475fbe7e9b959fbc5658a2213968d9ddcaad5c558c03733927a32b49d0a688b05dc2.wav
+ - src: "онно төрүөҕүттэн хараҕа суох ньирэйдээх этилэр"
+ - res: "отнохаудл"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.901639, loss: 114.994682
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/c71d3ee2c94798a59ab8934c3a959ff6cc5dbb1f24cf080fb08961d8991de709f16ac33f8b0a39d3d312194d3e7bac46cd59eb9fb3f9d818b88fd911f2edc965.wav
+ - src: "туох да буруйа суох оҕону дьахтары кытта баран кырган кэлэбит"
+ - res: "отуйакт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.819672, loss: 115.693413
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/1d4f6c2b0608b50bf4399f50c65cc17914eca482e1e38d2386541b7c1d2f46bec6cb07771959b03edb60656e166a8c1221ab672898d51fb5864d26170ee16753.wav
+ - src: "тиийбиттэрэ кыыстаах уола балтын аахха кэтэһэн олороллор эбит"
+ - res: "иттасатаманако"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.876712, loss: 118.560966
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/7042e830d6d92df6945c582243c3d43102c3c434952f17412350859b50709ccbd23f7dc9a84eeab6779c62d91c98eb1d86312b5aca88a3c67c45a0fce13cd1e0.wav
+ - src: "биирдэ эмэтэ уоскуйаары тох тоон ыллаҕына тулатын кэриччи көрбөхтөөн ылар"
+ - res: "бивднуднасиант"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.824324, loss: 119.597061
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/7752eaa86faf639e5c723b0af1d50e8b332ac988b3c9062aa825445f1ba16af0776aa5a94121f940d22ed72eca8ef185c4fd6c3ca87395e21754a3465005f8cf.wav
+ - src: "онтон тэптэрэн дэлби иһэр буолбута ол сылдьан эмискэ сүрэҕэ тохтоон өлбүтэ"
+ - res: "тоннонуофдсоннонт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.830189, loss: 120.614403
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b0b51f46c28009b91dfa95f8bda31be44c1238ffdbf913b57a3f9e0a9415dbb52f94d61292a86b693f9ff3fbae10bfd127f277e59ebc4d836a28a50899ba1a52.wav
+ - src: "эн миигин саамай мөлтөх киһи курдук көрөр эбиккин дии"
+ - res: "иналиднабили"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.833333, loss: 121.522606
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/3b4384cdea9e76f58956223116f395f6d647b6633fcf327416e06c3840a215f8eb28aa5ec966e554e6203e90114d68b67fbd1fc816274bf062fc312df892a642.wav
+ - src: "иккиэн биир хоһу куортамнаан олороллор үһү"
+ - res: "биоуанау"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.851852, loss: 121.688759
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/8a9d3e43ea8123aad6747b499311f31bbd7acb848f7894345d1a248d9f9c738a9ad46bc559a05ab5643d682425c6619cfa9ba46b128394f675efcf1622ba29df.wav
+ - src: "хайдах эрэ сундууктаах көмүһү аһан эрэр курдук сананна"
+ - res: "йахатусаа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.836364, loss: 122.071976
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2ccf07407475776d896b5d1bab6c5582e47fc540b468b3efd038b963c80e0049961e921a6b44eb2b10734460f7ad12a7ecac0a261c2b7dff4275c19e0e2ac2f1.wav
+ - src: "олох уларыйбат эбит диэн санаа төбөтүгэр охсуллан ааста"
+ - res: "лохитиана"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.863636, loss: 122.618011
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/ec552886d17d84820ca6e27c6fffe002102c3084d6c06d196871494404398cdaa02547d72bc911bbfbf4717f5fabc0aba9b520d6e54ae446b881768e2be271e2.wav
+ - src: "ол сэптэрэ бастакы биэс сөкүүндэтэ босхо үһү"
+ - res: "липасадад"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.872340, loss: 123.425453
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5d4ff02b59175bbc71e228a78b5c76c2b291952f9161e9505dba6ce837e386e4065a1d8c0c71e7fc38d1b28d198e6c992be106253ec789b8884c8ce443d24b03.wav
+ - src: "диидии мууһун көйөн бүтэрэн таҥаһын устан барда"
+ - res: "итинбасг"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.883721, loss: 123.570511
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/88da7b7a48831db11cb05346d88147b1e81a102c1232599580498afa991ee86b60e9390ec9424c445d424bddf7998c9f688a9a621a2e3a9a0d95d3ea3b179ec2.wav
+ - src: "иккиэн чахчыта эр бэртэрэ эрдьигэн үтүөлэрэ"
+ - res: "саситтин"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.836735, loss: 123.892410
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/1c98acfdd9fafbe91e3517ecb364f8260e91cefcb4a61eafd7257e3459a9a7e506970d18b14c4f4d881dfaa653aa1b56be3769918001efc2d7227fca7f5a4bbf.wav
+ - src: "эһэ чаанньык тыаһыттан соһуйан тыа диэки ыстаммыт"
+ - res: "усантноннаин"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.840000, loss: 124.139519
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/afd6d4b7d6dfb20d7ce53b6cb71c1e7beb55dee8ad345a55200f87074e0c1f44924370faed8c7a373e988936fd391258910d3b2438cb67d24cbe3aea14d6add0.wav
+ - src: "ира олох өйдүүрүттэн ааһан илиитин нэлэҥнэтэ турда"
+ - res: "вонусдбангитуа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.822222, loss: 124.872887
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/a8901c43f7aecc410b2736b93d0b72887edb2c0412793a23c739697a6c8112df0414fac5d416d816c3d06a4c4d2b1c612c2180761dc168b7ca9891d2cfdba762.wav
+ - src: "суох хантан эрэ сылдьарын ыйыппытым быһыылаах"
+ - res: "усантгимднтионал"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.867647, loss: 124.874115
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/4992fd62d5a3e2d7da05cfddd162f3e43b022447461c8eebf98249dcc9055495ba2f8a64b82a27263d6219adbdef2a87975b4c8bd2c9a9bb32971dafe2aa4293.wav
+ - src: "хайдах да чугаһыан булбата олорболуу түһэн баран оннун оҥостон сытта"
+ - res: "хатдлламднуо"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.830508, loss: 125.761818
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e2371235524b66f6603b50aa8c5cdd2b8825969d7cd764e3f5470eb1055642ebed00ddf5e104f3d9bc5fcedfef779500b788e068d2c36b356dca0159c1d311ff.wav
+ - src: "мин ол тыаны ортотунан ааһан алаас сыырын үрдүгэр киирбитим"
+ - res: "мономоуапант"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.883721, loss: 125.782928
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/7de33508bf215783703ba44c4dc3b688ddc95831e5dd290c702fa576d75481830f6b3101711272aa18136d26e36363e3ba1c42a89b92a0517bb2cdb1f1fb3cea.wav
+ - src: "бу кыыс соҕотох буолбатаҕа буолуо баран көр"
+ - res: "гитблоом"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.892308, loss: 126.712631
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/6d64cbac9cc1383b9c63f20503265598773fdea2f2e3eecd655b495fea545de4c469ac813049b73df4459f3acadf3b3bfbb4a051f12c3c5be9f9f44ce5560c7e.wav
+ - src: "эргиччи көрдө да кыыһа суох чаһыытын көрбүтэ үһү уон сэттэ ааспыт"
+ - res: "такасохиу"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.865672, loss: 127.666000
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/296533781d712fee7399585a487312e9adb587b55d2c9b390553aeba44b7fb39aefb167bb230e8e3ef18b188c77bbdb6ac22a1051825415392282e8f97945e45.wav
+ - src: "ити уустук кэмҥэ киниэхэ саҥа киһи саҥа олох үөскээн эрэрин билбитэ"
+ - res: "митусантавуионт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.868852, loss: 127.824944
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e4b9cbf82103561c3043d660b61ce4c7edd574f6b72ee64624ca27245fe39d034ae557c4b5c316a1a07c03071d8d29beace952b1690ec7882c53e28feb8aea8c.wav
+ - src: "сеня хааман иһэн миэстэтигэр хараҕаламмыт курдук туран хаалла"
+ - res: "аманилохка"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.833333, loss: 128.389740
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/72a91e0835f26827f32a4b26abfe99dbe125aa31efe4ec7688b5687cf55e32c803915694e9c81dc610142c2d4b801a039779ebe2f21838a80a4be1c2e7ab6f7f.wav
+ - src: "эгэ кырыы учаастакка баар буолуо дуо"
+ - res: "лдакаблд"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.870588, loss: 129.043610
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/afa2a08ada4db3aa035bdb1d26e3cbd9002a54ac09466d97806d26187f56d645e91fc09acf55ccae84f16456fdf40c221252fc00e2b6ae2a00dfa57eeb5a8e4b.wav
+ - src: "бу олох муудараһын кыыһы дьахтары ыарахан үлэттэн харыстыыры кини уолугар эмиэ иҥэрдэ"
+ - res: "лохдуудтхиллд"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.800000, loss: 129.105469
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/65795623ce3cdcaed275072bc5f82df9105e2203cf327033d7c53f3a07ae903e90e89e59d86fab8f8d195f26cfcd625408b4cb1cf60d410c30b0f20050f33d2b.wav
+ - src: "үксүн мас көтөрүн ытан ылан үссэнэр"
+ - res: "нанганбандт"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.793103, loss: 129.333328
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/aab9783996bfa3e421e5d59465687355691c0885902e4daa8ec03f93a1e958c3c11339f4112560cba45534a250c7780991402df1f764f7506a875f6366cdd04c.wav
+ - src: "киһиэхэ эрэ алҕас тахсар буоллаҕа соруйан оҥоруу буоллаҕай"
+ - res: "лалалалалалалалала"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.862069, loss: 129.524323
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/d3eb81e105df6de46d887d3f55018d2e559e52840321ac91faff35584bdc4ec06eb0a391826df1aaca2507744dbacd4f288b91d70a0f91919980851f4ca30565.wav
+ - src: "баччааҥҥа диэри кэлбэтэх буоллаҕына дьыала мөлтөҕөр тахсар"
+ - res: "тамдикиллаит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.875000, loss: 129.646835
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2256e0328e5f6aba9a2924bd8e4be59a4515ff1e209e38d4e783324e0ea27be8eee08dc5ca94aa80ed65b5c2b70004e16c62a28611a846e7c6a62718ce10b4bf.wav
+ - src: "биһиги барааппытын кытары уу баһабын диэн үрэххэ киирээр"
+ - res: "бигаттоа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.845070, loss: 130.341843
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/28606c29ef1f78dca0e1ca0bca535dffc0458cee9cf851770e4d3fa3fff8a2e75e95cae90d1d73bc6a8e4282fefda0f7b63bc5ad1931b4a73b07990603c16977.wav
+ - src: "ыалларын уола сэмэн ону истээт кыыс суолун батан сүүрэн элэстэтэ турбут"
+ - res: "ллануситтдну"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.811321, loss: 130.607666
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/8827ddd2dc087fb4fb7771db23d3938be38dd8ab30498e17bb4a39e1fe6a8c072556fce1a15286abf685c11e8bfbe0d0ced459d5ccf61b3f0c208883c5d56c17.wav
+ - src: "кини булчаһа диэн уола сайдыы бөһүөлэгин табыгар баар"
+ - res: "интусаосгина"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.886076, loss: 134.160843
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/93a6c664a82265966385d035a32739ff108d8e69a395b53ac346bdb3891af426eb08b01b0f1ff56209903c36b7fa3a1c0759ca2829e8ee14813075672ab8c212.wav
+ - src: "ол кэнниттэн көрдөстөхтөрүнэ да бэйэҕит ыйытыҥ диэн аккаастаан кэбиһэр буолбута"
+ - res: "оннднуитау"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.872727, loss: 134.989334
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/1eeeaa477ceecdb76659ed6e5b9a6b78e7719bc10a6c8343a07bd961a9802f861d8ff4225824f8f1a04af951336a00543340bfad469671b8d197cbaf0166ab74.wav
+ - src: "дьиэ үлэтэ барыта уу чуумпутук эйэ дэмнээхтик оҥоһуллар"
+ - res: "елаууднбаса"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.870130, loss: 138.119125
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f77e937c48498b3dcd07b2b6dd5e07484a398e32b690a48b0d3f5d8ba4d6140c0e69030907f66420f595ef59e2ca5478a231737e78bbf30adb44e47c8b7d11d3.wav
+ - src: "олус эрэйдэнэн тиийбиппит оттон төннөрбүтүгэр суолбут арыллан табыллан испитэ"
+ - res: "олусамонуани"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.855072, loss: 138.160400
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/4d1b191188e8632c19293018282a7b7676c9cbd6cdb2f00df72170f96e1f24600aac00cbd31d7c44f0ff14e655852d380c42d477bf048e2ce9f0d4c204b91713.wav
+ - src: "таптаһар дьоҥҥо бириэмэ түргэнник ааһарын бары бэркэ билэбит буолбаат"
+ - res: "тднуимднуалита"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.890411, loss: 138.571091
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/74bcf375c7cb786bc404c2896606d7a740d94ccd71253eb806dd68955b8d766ce513b362faa4c1867d1e2a82c333937663debba09b32e48669bd58edb880fc67.wav
+ - src: "дьүөгэлиилэр сонуннарын хардарыта атастаһан элбэҕи кэпсэттилэр сэлэстилэр"
+ - res: "гилижднудср"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.827586, loss: 139.582870
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/68351059284065d85b61da3602211771c60810c2b34c28ab9288832f15acb22f161baee38185e44538c6ca43284908a1c51800a187458072e8da04979941eb3d.wav
+ - src: "уус алдан дьоно олохтоох дьону кытта соччо сөбүлэспэтэхтэр"
+ - res: "усантплануаблд"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.857143, loss: 139.748840
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5f88b7d119f003513bc83a71ba9a2433cafccb587243122a4e25b556c992d38988c6b6d8a40e8d7536986ce7b1cd29d335dfb6251a1b59a1908c22f1a9bd48ef.wav
+ - src: "өлөрөөрү үҥүүнэн суптурута түспүттэр да өлбөт үһү"
+ - res: "ллануситта"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.833333, loss: 140.184814
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/8d0ee87119e458a330790c015e6aae986866f7b637cabba76297a343f4633bd933c782da47d643461d3ea03f9ddadea38b9091d63f4b2d81a5758c3619640b20.wav
+ - src: "бу катя барахсанова суруйуутун ааҕа олорор"
+ - res: "басабассан"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.871795, loss: 141.617447
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/826c6aa71c9bd9a66d64389fb3cf7a22f0c8dc5e7778648f83ca3c4b4e0423ebbe95c1bbcefc06b3cc20decd629757ff49c813eb5ac3bc06070c460d0eb94193.wav
+ - src: "кинилэр улахан уолларын оҕолоноллоругар анаанминээн москубаҕа баран кэлбиттэрэ"
+ - res: "инуоллдссаббл"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.893333, loss: 141.834518
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b6e452812b722eea17309be8eeff0067819418588f50ed4a2d79f9e1c6884d07ed1f9b4353b0aec7ed04124442afcadf0ce9be5c768a8389977232e07106a7a3.wav
+ - src: "оҕо бэрээкин атаҕар табыллан кылыйан куотан эрэр хоһууну кэнниттэн сырсыбыт"
+ - res: "оттолинтки"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.875000, loss: 143.113480
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e93b05ee33423cf4132f4481ad224c0641815d3ca36ed2f79b885794d0389c055ff3b191a2123c65960e89a0070d57901bfe2d89a0058872bf280c7982d07246.wav
+ - src: "баахыга тиийэн балыгы дэлби өлөрөн өйүө оҥостон баран өссө хоту түһэллэр"
+ - res: "хийангдлийк"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.888889, loss: 143.181595
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/d04ce7630742562a8aaa201ef6b88359c7d580057d3cf2fc0a857d8b4183134eec67c921adf9d9ffae61322fd297fe0ad074db1524b8d55ccc103a46e5994f6d.wav
+ - src: "ийэ барахсан оҕотугар үчүгэйи дьолу баҕарара кэмнээх буолуо дуо"
+ - res: "аннангалд"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.806452, loss: 143.926559
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/029599e2a7e97861178194f27f1a58e934fb45c6e2cda098c4c9cf09721cfd4ce3f653cd05729e4bca56f8ed036e868aa7518741c8aa41c9706dc942fb6d1627.wav
+ - src: "оо бу алаадьыны ыкка биэрэр дуу"
+ - res: "балалаика"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.885714, loss: 145.960403
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b551bb560ae193e52e58bd371a73b6c5dd8da5c62e3c2996086a729ac784be5973ab56a6435eb2bcf7dae1791a1db0a51f7ac5002c5637fd032ab3397fe5e2bd.wav
+ - src: "онтон өлөксөйбүт таһырдьа сылдьарын өйдөөн киһибит киирэрин кэтэстибит"
+ - res: "тобидткит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.884615, loss: 147.718033
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5c3b3e7157fb07a666416d96f68a1d03ffd9779193ee179f06f34971748baeac2881a2a858849c67121c89c9fb48580212f63aa9c462a10f95bc2c7010173bcf.wav
+ - src: "дьүөгээм оонньоон дьээбэлэнэн ити этэр буоллаҕым дии"
+ - res: "динтудиниан"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.863636, loss: 148.090622
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/4130ff194936f1b3fab0af28c8ed5a8f79a6d8559218b923046897ee71299a2452f03450c104a7aff2d4d7e36c66491105bacf2592de0e1746d880c4bea4fbad.wav
+ - src: "ким тугу эрэ аҕалбатаҕын оннугар чугастааҕы оҕолор сүүрэн баран дьиэлэриттэн аҕалбыттара"
+ - res: "алабатусонполит"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.847222, loss: 148.603424
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e8d9135e9c546df94785c3e5fcd7ecc95e66cdb22fa673f94cbb79478881e76fda161b13a0f9b4a39828c2509bfa2a3e765ea44f8de25a1b027196aeb6be09a9.wav
+ - src: "кини кулууп дьиэҕэ баар буолан киһи да сылдьара онон олус сэргэх сир этэ"
+ - res: "килбаллшбауздст"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.783784, loss: 149.863510
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/d4998794a933fd7382f68304cd133dce37389d149290ecfda621b2937846bb9f782e7e057d1e1e556d1ce9af5b48f40f55f5974ad3f1cdb99c591613b0397fda.wav
+ - src: "ол чиэппэрэ балачча сыанаҕа турар ини"
+ - res: "рфаааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.895522, loss: 151.220627
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/2431059b6590df94465190a5cce0ada6bd687956df320bc57796c2eaff6963ffad84ec672fd5753895cdb27690f3e1e98ca2d64b7707f9ce8fbc29b688516430.wav
+ - src: "диэн сибигинэйэ былаастаан саҥаран баран ытыһынан айаҕын саба тутта"
+ - res: "инвлинаблдн"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.864865, loss: 151.699173
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/9bce05a02832a7ab33d72beea196e02dbb8dcfb9ea9b13ee5334089176430dc31820d64e71c5da31cce238900f1e4edc5a1c839f659255e47e2fe2ef5d75db06.wav
+ - src: "киэсэ хараҕа аны от төбөтүгэр биэтэҥнии олорор кыракый хомурдуоска хатанна"
+ - res: "хаттилидхна"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.849315, loss: 152.158829
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/4c12b11d2984d15785d2c29245c320cd72180ef93db05d949ef8d12badfe556f03d46b81df2e04a30deb5075cba15c07b6ff4aca71c5d65ebaa5f979bccfb839.wav
+ - src: "бастакынан хайдах курдук эн миэхэ үөрүүнү аҕаллыҥ суругу туттум долгуйдум"
+ - res: "баааааауулд"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.868852, loss: 152.771667
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/eedb547e2f7a6f6b801b7e19714cf177bf6ce48f642d82383e12eec7d340988dfec2d26f5087268a3ec56e53a9ffba101ac4b82a79be323c3f12f5538444acea.wav
+ - src: "эмискэ туох эрэ күөхтүҥү хараҥа уу үрдүгэр сүгүллэн тахсыбыта"
+ - res: "соталингат"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.894118, loss: 152.794159
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/67e3687514ca95b2e17600cb785f95b2d26574d994d3db475263286d6d186bf9324991b6e111c16fc5f060a4749567973cabaea95603acff650bbc2b3f5322af.wav
+ - src: "оҕо бэрээкиннээх күүтэн ахан сыттахтарына кэмниэкэнэҕэс ураһаларын аана дьэ аһыллыбыт"
+ - res: "обтаисхауион"
+--------------------------------------------------------------------------------

@@ -1,0 +1,85 @@
+## /DeepSpeech.py --train_files ../sah_6h_2019-06-12/clips/train.csv --test_files ../sah_6h_2019-06-12/clips/test.csv --epochs 10 --checkpoint_dir ../checkpoints --alphabet_config_path ../alphabet_sah.txt --n_hidden=128
+
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:00:32 | Steps: 1211 | Loss: 189.036640                                                                                                                    
+Epoch 1 |   Training | Elapsed Time: 0:00:31 | Steps: 1211 | Loss: 140.105506                                                                                                                    
+Epoch 2 |   Training | Elapsed Time: 0:00:31 | Steps: 1211 | Loss: 113.350450                                                                                                                    
+Epoch 3 |   Training | Elapsed Time: 0:00:32 | Steps: 1211 | Loss: 97.826303                                                                                                                     
+Epoch 4 |   Training | Elapsed Time: 0:00:31 | Steps: 1211 | Loss: 89.701435                                                                                                                     
+Epoch 5 |   Training | Elapsed Time: 0:00:32 | Steps: 1211 | Loss: 83.784034                                                                                                                     
+WARNING:tensorflow:From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+W1107 20:34:50.442657 139865231791936 deprecation.py:323] From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:960: remove_checkpoint (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to delete files with this prefix.
+Epoch 6 |   Training | Elapsed Time: 0:00:31 | Steps: 1211 | Loss: 79.015415                                                                                                                     
+Epoch 7 |   Training | Elapsed Time: 0:00:31 | Steps: 1211 | Loss: 75.382165                                                                                                                     
+Epoch 8 |   Training | Elapsed Time: 0:00:31 | Steps: 1211 | Loss: 71.844495                                                                                                                     
+Epoch 9 |   Training | Elapsed Time: 0:00:31 | Steps: 1211 | Loss: 69.049636                                                                                                                     
+I FINISHED optimization in 0:05:18.877852
+WARNING:tensorflow:Entity <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f33c5fcce10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f33c5fcce10>>: AttributeError: module 'gast' has no attribute 'Num'
+W1107 20:36:58.099098 139865231791936 ag_logging.py:145] Entity <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f33c5fcce10>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f33c5fcce10>>: AttributeError: module 'gast' has no attribute 'Num'
+WARNING:tensorflow:From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+W1107 20:36:58.164845 139865231791936 deprecation.py:323] From /home/dorofei/tmp/deepspeech-gpu-venv/lib/python3.6/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+INFO:tensorflow:Restoring parameters from ../checkpoints/train-12110
+I1107 20:36:58.165729 139865231791936 saver.py:1280] Restoring parameters from ../checkpoints/train-12110
+I Restored variables from most recent checkpoint at ../checkpoints/train-12110, step 12110
+Testing model on ../sah_6h_2019-06-12/clips/test.csv
+Test epoch | Steps: 451 | Elapsed Time: 0:03:08                                                                                                                                                  
+Test on ../sah_6h_2019-06-12/clips/test.csv - WER: 1.000000, CER: 0.876000, loss: 169.344482
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.809524, loss: 54.447090
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f8ae50bd6d77fab29b9dec201e720b7f7f870d96fd111f8db354e05f8b6ae193aa7fe550e2a30d8870cc77062966ae0e12001ecdf74fea3c8bdc954f928b0ea3.wav
+ - src: "бүгүн күн ортотугар диэри испиэскэ кэлбэтэ"
+ - res: "гонкдтусиант"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.806452, loss: 57.158905
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/71908297e53e89e2179a5a1f5e46e336429ed1ca7c661de7509963cac9bc0ef44763289e2236003d2f8f0da63542055af2e38b4a830a520bcb5e19ddd3ed4f10.wav
+ - src: "ити дуо көрө түһээт таптал диэн"
+ - res: "тиутинтки"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.843750, loss: 58.263344
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/32bb39519917fbf8e35b4091cf0d61c6e6c6a46f2bbe64b8f780cb56676374f0a53b1e2d191a893a8b4888721c0195ae58547acb028256f891e92188bf820976.wav
+ - src: "ыйы быһа уу эрэ аһылыктаах сытар"
+ - res: "аттатта"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.857143, loss: 63.255260
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/5c82d9bda486ca0023850dd72956250145321cbd58816db9dc0bbb364e20ad29b5d2f4414738fde29587f8f72a260349748f2b1601397c674dd3e1ea8f7fba9c.wav
+ - src: "хайдах буолара буолуой эдьиий этэн көр эрэ"
+ - res: "анатуатин"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.833333, loss: 66.428116
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/16efbbc248d42a6cb2d0ca2674c0a6f340c7b53f704ff7ca2011ce0fd7182cfa79aad153247f6a87a6ec6803b8db20975c0e1444b708ae1e4a45c56726e7b251.wav
+ - src: "кыыһым эмиэ олох кини буолбатах диир"
+ - res: "канонтиоани"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.846154, loss: 70.597603
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/13b9c53c164a83344fc5044c10a4e8fc885bda2d75acf934fd1192843e797f8032b9d73f262844d4cf30c5a95f69f758d0a952e1dfc243de4a41f88f56002edf.wav
+ - src: "эппитим дии көрөөт да сөбүлээбитим диэн"
+ - res: "тикатти"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.829787, loss: 72.163422
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/04e48fe2712eea9c79ce9ba20c5cb46a92a781aacbb20f114e181df5e6437933830d418dacefddfcee3e075a8174ecd3c72b788d785d9ff1e7ee145e54a6e39a.wav
+ - src: "ылан иккистээн илиитигэр туттаран баран таҕыста"
+ - res: "аттиттуан"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.810345, loss: 72.359634
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/84edca40528591f46b0a2ad2003d45888ae2d261c9489927e46e2c1c2affefbb3dfc420977e295bb3a3d008f3d0f2fa6ac2643a61d758ddbad1d4aa939a87d10.wav
+ - src: "абаҕата суох сатаммат курдук буолааччыгын хайдах буоллугут"
+ - res: "аатааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.800000, loss: 74.394402
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/638372d7d14794c9ee68912ed6d7a4eb17d5f992c8c3a525d11230ef7c440d499ece323aaeb04615a08b0e7efe4d3874c570dcef8c72987187c08d25337253ad.wav
+ - src: "хаары ыраастаан баран ааны тутааҕыттан тутан турда"
+ - res: "хатануатдна"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.848485, loss: 74.837280
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/9a21d1055f6f0ce1f07b0cc68805aa244b1d2ba60874d64a4f084d777ce9e3651cbd2fc4b3bccaa2d182d8098d680def31a2d06f33588e07aad0e967812a2ccc.wav
+ - src: "онно тыыннаах тиийэр эрэ суох эрэ"
+ - res: "тагатиха"
+--------------------------------------------------------------------------------

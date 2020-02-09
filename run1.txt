@@ -1,0 +1,63 @@
+###./DeepSpeech.py --train_files ../sah_6h_2019-06-12/clips/train.csv --test_files ../sah_6h_2019-06-12/clips/test.csv --epochs 1 --checkpoint_dir ../checkpoints --train_batch_size 20 --test_batch_size 48 --alphabet_config_path ../alphabet_sah.txt
+
+I STARTING Optimization
+Epoch 0 |   Training | Elapsed Time: 0:02:08 | Steps: 60 | Loss: 104.304788                                                                                                                      
+I FINISHED optimization in 0:02:09.141191
+WARNING:tensorflow:Entity <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f85203bc9b0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f85203bc9b0>>: AttributeError: module 'gast' has no attribute 'Num'
+W1107 20:20:14.743892 140214420604736 ag_logging.py:145] Entity <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f85203bc9b0>> could not be transformed and will be executed as-is. Please report this to the AutgoGraph team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output. Cause: converting <bound method LSTMBlockWrapper.call of <tensorflow.contrib.rnn.python.ops.lstm_ops.LSTMBlockFusedCell object at 0x7f85203bc9b0>>: AttributeError: module 'gast' has no attribute 'Num'
+INFO:tensorflow:Restoring parameters from ../checkpoints/train-660
+I1107 20:20:14.809167 140214420604736 saver.py:1280] Restoring parameters from ../checkpoints/train-660
+I Restored variables from most recent checkpoint at ../checkpoints/train-660, step 660s
+Testing model on ../sah_6h_2019-06-12/clips/test.csv
+Test epoch | Steps: 9 | Elapsed Time: 0:00:54                                                                                                                                                    
+Test on ../sah_6h_2019-06-12/clips/test.csv - WER: 1.000000, CER: 0.882204, loss: 172.062408
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.812500, loss: 64.828201
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/32bb39519917fbf8e35b4091cf0d61c6e6c6a46f2bbe64b8f780cb56676374f0a53b1e2d191a893a8b4888721c0195ae58547acb028256f891e92188bf820976.wav
+ - src: "ыйы быһа уу эрэ аһылыктаах сытар"
+ - res: "аатаааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.861111, loss: 69.859200
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/16efbbc248d42a6cb2d0ca2674c0a6f340c7b53f704ff7ca2011ce0fd7182cfa79aad153247f6a87a6ec6803b8db20975c0e1444b708ae1e4a45c56726e7b251.wav
+ - src: "кыыһым эмиэ олох кини буолбатах диир"
+ - res: "ануибаси"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.848485, loss: 71.774506
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/9a21d1055f6f0ce1f07b0cc68805aa244b1d2ba60874d64a4f084d777ce9e3651cbd2fc4b3bccaa2d182d8098d680def31a2d06f33588e07aad0e967812a2ccc.wav
+ - src: "онно тыыннаах тиийэр эрэ суох эрэ"
+ - res: "атисхага"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.870968, loss: 77.642960
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/71908297e53e89e2179a5a1f5e46e336429ed1ca7c661de7509963cac9bc0ef44763289e2236003d2f8f0da63542055af2e38b4a830a520bcb5e19ddd3ed4f10.wav
+ - src: "ити дуо көрө түһээт таптал диэн"
+ - res: "хдхаита"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.880952, loss: 77.819168
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f8ae50bd6d77fab29b9dec201e720b7f7f870d96fd111f8db354e05f8b6ae193aa7fe550e2a30d8870cc77062966ae0e12001ecdf74fea3c8bdc954f928b0ea3.wav
+ - src: "бүгүн күн ортотугар диэри испиэскэ кэлбэтэ"
+ - res: "натисаба"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.836735, loss: 79.087425
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/b7550facb814370621d22cc0d3c0353a427b9f1547b5a393ff05553e3747b94b19b61c9afeb39157b5dc4072672b3e39a6c73b64bfd481c1796e2eff35f9ee0f.wav
+ - src: "бу түбэҕэ кини бултаабыта уонтан тахса сыл буолла"
+ - res: "аатааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.878049, loss: 80.290588
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/e99bea6a49fb63daa60f6859b4d894bf1f4f12bce69f31a2ae037bdc5a4c3c65a3ba7e7be0fc4ab9e8fce6ebb9573c4024729709658660d6a42d9de4e8c98f91.wav
+ - src: "дьоммут бултуу барбыттара да кэлэ иликтэр"
+ - res: "аатааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.760000, loss: 81.775787
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/638372d7d14794c9ee68912ed6d7a4eb17d5f992c8c3a525d11230ef7c440d499ece323aaeb04615a08b0e7efe4d3874c570dcef8c72987187c08d25337253ad.wav
+ - src: "хаары ыраастаан баран ааны тутааҕыттан тутан турда"
+ - res: "аатааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.857143, loss: 82.136887
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/bfacba485b38b7f2df3c8310794599a1f2e5f6a1e33145eb527ec50f4a22b4ef14aa9ebc0c19bceae6d4a0363fcff1df71de5e217781c0e3b32d7d1f3c1648da.wav
+ - src: "ол эрээри абааһылара уот алгыһын истибэтэх"
+ - res: "аааааааааа"
+--------------------------------------------------------------------------------
+WER: 1.000000, CER: 0.807692, loss: 83.560371
+ - wav: file:///home/dorofei/sakhaspeech/sah_6h_2019-06-12/clips/f88083ff374511136aafb0e40bb7b17a0ab2b1a191ba3510e5750365dfbb1570bb9690d777d5069e8483076e8a68230e2c03c988d7de01ab69815aa710599cb2.wav
+ - src: "бу да кыыс нина тохтоо эрэ"
+ - res: "бдтот"
